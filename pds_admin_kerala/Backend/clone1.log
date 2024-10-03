@@ -1,0 +1,925 @@
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\5ff57d79d24a47549cdabec16a8814aa-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 18:28:21 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2590420 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 4.61 sec. (2246.98 ticks)
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\5ff57d79d24a47549cdabec16a8814aa-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 18:28:30 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 12.31 sec. (4603.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\6e136c8a1b584095a2475343f4d107a1-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 19:47:50 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4953744 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 5.88 sec. (2785.16 ticks)
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\6e136c8a1b584095a2475343f4d107a1-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 19:48:01 2024
+
+Using devex.
+
+Total time on 30 threads = 16.72 sec. (6360.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\85ffa7766ee44d2eb0ee85a9ead26241-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 23:20:06 2024
+
+Presolve time = 0.03 sec. (7.50 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\6bb3c25660984785bac81f72394c281c-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 23:28:43 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.30 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (6.24 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\890362a2b9bd4616a633cbae4881c358-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 23:31:47 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.30 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+ Barrier aborted.
+Barrier time = 0.02 sec. (3.82 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\2162a5c32e20467d83639a4f5d9b2beb-pulp.lp' Clone_1 (V22.1.0.0) Tue Aug 27 23:34:04 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.30 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (6.24 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\257ba9b54eec4b5d805cee4b8c90809c-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 01:56:24 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2590420 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 4.86 sec. (2246.98 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\257ba9b54eec4b5d805cee4b8c90809c-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 01:56:34 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 12.97 sec. (4603.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\323fb5a7356c4c78bee0385672619f89-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 09:58:48 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4953744 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 5.78 sec. (2785.16 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\323fb5a7356c4c78bee0385672619f89-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 09:58:59 2024
+
+Using devex.
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 16.22 sec. (6360.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d6d166fffac14e3b92c214609c8193e7-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 12:50:02 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.01 sec. (9.26 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d6d166fffac14e3b92c214609c8193e7-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 12:50:02 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.05 sec. (202.49 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\68b07c130b71456b8c01084651bcb9f3-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 16:17:46 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.03 sec. (9.26 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\68b07c130b71456b8c01084651bcb9f3-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 16:17:46 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.08 sec. (202.49 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d7869ab9d11041f68ebc8833a6147a33-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 16:25:29 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (9.26 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d7869ab9d11041f68ebc8833a6147a33-pulp.lp' Clone_1 (V22.1.0.0) Wed Sep 11 16:25:29 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.06 sec. (202.49 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\2497c816a48a4720b1b6a1aa4df6b439-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 09:57:46 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.03 sec. (9.26 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\2497c816a48a4720b1b6a1aa4df6b439-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 09:57:46 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.06 sec. (202.85 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\a261504cb27b46418bc838b5ff44e1d0-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 11:19:48 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (9.28 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\a261504cb27b46418bc838b5ff44e1d0-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 11:19:48 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.05 sec. (202.87 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\810cc8f2d81e436ea88b350bb2e54af6-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 12:58:46 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (3.82 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\0b58b97f039742a2bfafba177cd7a53c-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:14:39 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+Barrier time = 0.06 sec. (5.44 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\50c77bc4afb246928028140f0530b458-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:15:25 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+   6   1.9223329e+07   1.6015067e+07  4.46e+04  1.75e+01  3.71e+02  8.25e-03
+   7   1.8041327e+07   1.5953535e+07  2.87e+04  1.13e+01  1.56e+02  1.45e-02
+   8   1.6644378e+07   1.5932021e+07  9.80e+03  3.85e+00  5.54e+01  3.68e-02
+ Barrier aborted.
+Barrier time = 0.05 sec. (8.60 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\b3635ca5da324132bdd257e7ee8c9e3f-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:16:07 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (6.24 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\e5a679de93f94b949a97cf0a10f428bd-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:18:32 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+ Barrier aborted.
+Barrier time = 0.02 sec. (3.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\1d80fd896b564ec8b79b3458c64fb67d-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:21:42 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.39 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\924d1f40664444f8814f317cbeb2a23b-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:27:45 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (4.60 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\9178fd61a7f24c6286e9ba6d72b044fc-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:30:16 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+ Barrier aborted.
+Barrier time = 0.02 sec. (3.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\79d96a86f6104277940105d3dd3ebd34-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 13:32:28 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.39 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\86b209ff946a400cb9e01d9a250bbf3e-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 17:46:04 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 932 rows and 12722 columns.
+Aggregator did 166 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (9.28 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\86b209ff946a400cb9e01d9a250bbf3e-pulp.lp' Clone_1 (V22.1.0.0) Fri Sep 13 17:46:04 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 0.05 sec. (202.51 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\51d4cb6b8e474a2e9d1d08eec9ff2098-pulp.lp' Clone_1 (V22.1.0.0) Sat Sep 14 12:23:35 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+   6   1.9223329e+07   1.6015067e+07  4.46e+04  1.75e+01  3.71e+02  8.25e-03
+   7   1.8041327e+07   1.5953535e+07  2.87e+04  1.13e+01  1.56e+02  1.45e-02
+ Barrier aborted.
+Barrier time = 0.06 sec. (7.82 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\0325da637c21485c9d4dc61e5722f8e7-pulp.lp' Clone_1 (V22.1.0.0) Sat Sep 14 12:26:54 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+ Barrier aborted.
+Barrier time = 0.05 sec. (5.39 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\9030f1e64c50429eab949ea01a00aa12-pulp.lp' Clone_1 (V22.1.0.0) Sun Sep 15 20:51:35 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2590420 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 4.61 sec. (2215.06 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\9030f1e64c50429eab949ea01a00aa12-pulp.lp' Clone_1 (V22.1.0.0) Sun Sep 15 20:51:44 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 12.16 sec. (4572.00 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\ddf38b1bafb74961b0f2b8b274407816-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 11:16:10 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2590420 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 4.14 sec. (2215.06 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\ddf38b1bafb74961b0f2b8b274407816-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 11:16:17 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 10.30 sec. (4572.00 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\26ee0e6ca55a42a39cf3fa353cabaf8c-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 17:31:51 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2590420 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 3.84 sec. (2246.98 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\26ee0e6ca55a42a39cf3fa353cabaf8c-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 17:31:58 2024
+
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 10.19 sec. (4603.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\fc1b6d7aaa3e4a568455c94a195cc582-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 18:32:45 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 4953744 rows and 5124768 columns.
+All rows and columns eliminated.
+Presolve time = 5.92 sec. (2785.16 ticks)
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\fc1b6d7aaa3e4a568455c94a195cc582-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 18:32:56 2024
+
+Using devex.
+Parallel mode: deterministic, using up to 30 threads for concurrent optimization:
+ * Starting dual Simplex on 1 thread...
+ * Starting primal Simplex on 1 thread...
+
+Total time on 30 threads = 16.28 sec. (6360.92 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\e90aa7dd92304732be69bfa7ff15ce70-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 19:32:40 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.02 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (4.60 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\f8b9cdb93a6944ff836e63f14cfdaa66-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 19:35:34 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+   2   4.5332954e+07   1.4379953e+07  4.29e+05  1.68e+02  1.15e+04  1.11e-03
+   3   3.1269154e+07   1.6304690e+07  2.09e+05  8.21e+01  5.18e+03  1.44e-03
+   4   2.8349814e+07   1.6220696e+07  1.69e+05  6.62e+01  2.04e+03  2.46e-03
+   5   2.0749193e+07   1.6065441e+07  6.56e+04  2.58e+01  1.04e+03  4.57e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (6.24 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d1545a722be94ad1903b348fc112a5c5-pulp.lp' Clone_1 (V22.1.0.0) Mon Sep 16 19:51:13 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.33 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9820668e+08   3.1479605e+06  1.09e+07  4.30e+03  3.89e+04  1.00e+00
+   1   1.1081972e+08   1.1821399e+07  1.46e+06  5.72e+02  1.96e+04  8.28e-04
+ Barrier aborted.
+Barrier time = 0.02 sec. (3.03 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\ff76bd85f8cc4b0299a44b23d08b45e6-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 21:00:23 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 28 rows and 616 columns.
+Reduced LP has 531 rows, 11198 columns, and 22396 nonzeros.
+Presolve time = 0.03 sec. (8.03 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 11198
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.85 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 531
+  Integer space required    = 11245
+  Total non-zeros in factor = 12191
+  Total FP ops to factor    = 286993
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   2.1980781e+10   0.0000000e+00  2.60e+08  0.00e+00  4.38e+06  1.00e+00
+   1   2.2394539e+09   1.2570742e+08  2.47e+07  0.00e+00  1.01e+06  2.03e-05
+   2   1.2190784e+09   2.4204979e+08  1.12e+07  0.00e+00  5.36e+05  1.49e-05
+   3   6.5286717e+08   1.2629696e+08  6.22e+06  0.00e+00  3.28e+05  2.09e-05
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.68 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\a6a693542402440da8aa5004ac00147c-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 21:01:44 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 28 rows and 616 columns.
+Reduced LP has 531 rows, 11198 columns, and 22396 nonzeros.
+Presolve time = 0.02 sec. (8.03 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 11198
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.02 sec. (0.85 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 531
+  Integer space required    = 11245
+  Total non-zeros in factor = 12191
+  Total FP ops to factor    = 286993
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   2.1980781e+10   0.0000000e+00  2.60e+08  0.00e+00  4.38e+06  1.00e+00
+   1   2.2394539e+09   1.2570742e+08  2.47e+07  0.00e+00  1.01e+06  2.03e-05
+ Barrier aborted.
+Barrier time = 0.02 sec. (3.99 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\e59543454aa246ee9580c2ac1b3667c6-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 22:31:53 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.54 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9858973e+08   2.9672691e+06  1.09e+07  5.12e+03  3.87e+04  1.00e+00
+   1   1.1087335e+08   1.1775862e+07  1.45e+06  6.81e+02  1.96e+04  8.21e-04
+   2   4.5882304e+07   1.4881753e+07  4.35e+05  2.04e+02  9.98e+03  1.16e-03
+   3   3.0229887e+07   1.6458443e+07  1.93e+05  9.03e+01  4.54e+03  1.50e-03
+   4   2.5326920e+07   1.6489520e+07  1.24e+05  5.81e+01  1.57e+03  2.65e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.39 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\a6774b551a4f4012bbb68276dc2321df-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 22:38:35 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.54 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9858973e+08   2.9672691e+06  1.09e+07  5.12e+03  3.87e+04  1.00e+00
+   1   1.1087335e+08   1.1775862e+07  1.45e+06  6.81e+02  1.96e+04  8.21e-04
+   2   4.5882304e+07   1.4881753e+07  4.35e+05  2.04e+02  9.98e+03  1.16e-03
+   3   3.0229887e+07   1.6458443e+07  1.93e+05  9.03e+01  4.54e+03  1.50e-03
+   4   2.5326920e+07   1.6489520e+07  1.24e+05  5.81e+01  1.57e+03  2.65e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.39 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\261aa5bf460042cf83e3b8dfa16e918a-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 22:45:03 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.05 sec. (17.54 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9858973e+08   2.9672691e+06  1.09e+07  5.12e+03  3.87e+04  1.00e+00
+   1   1.1087335e+08   1.1775862e+07  1.45e+06  6.81e+02  1.96e+04  8.21e-04
+   2   4.5882304e+07   1.4881753e+07  4.35e+05  2.04e+02  9.98e+03  1.16e-03
+   3   3.0229887e+07   1.6458443e+07  1.93e+05  9.03e+01  4.54e+03  1.50e-03
+   4   2.5326920e+07   1.6489520e+07  1.24e+05  5.81e+01  1.57e+03  2.65e-03
+   5   2.2925804e+07   1.6328528e+07  9.13e+04  4.27e+01  6.05e+02  5.93e-03
+ Barrier aborted.
+Barrier time = 0.05 sec. (6.25 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\7d7aed81ab8844eb8b39abce935e18ce-pulp.lp' Clone_1 (V22.1.0.0) Thu Sep 19 22:45:49 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.54 ticks)
+Parallel mode: using up to 29 threads for barrier.
+Number of nonzeros in lower triangle of A*A' = 8811
+Using Approximate Minimum Degree ordering
+Total time for automatic ordering = 0.00 sec. (0.39 ticks)
+Summary statistics for Cholesky factor:
+  Threads                   = 29
+  Rows in Factor            = 229
+  Integer space required    = 4728
+  Total non-zeros in factor = 12172
+  Total FP ops to factor    = 743770
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   6.9858973e+08   2.9672691e+06  1.09e+07  5.12e+03  3.87e+04  1.00e+00
+   1   1.1087335e+08   1.1775862e+07  1.45e+06  6.81e+02  1.96e+04  8.21e-04
+   2   4.5882304e+07   1.4881753e+07  4.35e+05  2.04e+02  9.98e+03  1.16e-03
+   3   3.0229887e+07   1.6458443e+07  1.93e+05  9.03e+01  4.54e+03  1.50e-03
+   4   2.5326920e+07   1.6489520e+07  1.24e+05  5.81e+01  1.57e+03  2.65e-03
+ Barrier aborted.
+Barrier time = 0.03 sec. (5.39 ticks)
+
+Dual simplex solved model.
+

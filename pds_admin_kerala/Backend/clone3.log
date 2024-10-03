@@ -1,0 +1,379 @@
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\6bb3c25660984785bac81f72394c281c-pulp.lp' Clone_3 (V22.1.0.0) Tue Aug 27 23:28:43 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.28 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\890362a2b9bd4616a633cbae4881c358-pulp.lp' Clone_3 (V22.1.0.0) Tue Aug 27 23:31:47 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.28 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\2162a5c32e20467d83639a4f5d9b2beb-pulp.lp' Clone_3 (V22.1.0.0) Tue Aug 27 23:34:04 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.28 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\810cc8f2d81e436ea88b350bb2e54af6-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 12:58:46 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\0b58b97f039742a2bfafba177cd7a53c-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:14:39 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\50c77bc4afb246928028140f0530b458-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:15:25 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+Sifting iteration    4 [ 1331]:   Objective     =      15920902.175739
+Sifting iteration    5 [ 1292]:   Objective     =      15920902.175715
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\b3635ca5da324132bdd257e7ee8c9e3f-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:16:07 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\e5a679de93f94b949a97cf0a10f428bd-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:18:32 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\1d80fd896b564ec8b79b3458c64fb67d-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:21:42 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\924d1f40664444f8814f317cbeb2a23b-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:27:45 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\9178fd61a7f24c6286e9ba6d72b044fc-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:30:16 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\4\79d96a86f6104277940105d3dd3ebd34-pulp.lp' Clone_3 (V22.1.0.0) Fri Sep 13 13:32:28 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.06 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\51d4cb6b8e474a2e9d1d08eec9ff2098-pulp.lp' Clone_3 (V22.1.0.0) Sat Sep 14 12:23:35 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+Sifting iteration    4 [ 1331]:   Objective     =      15920902.175739
+Sifting iteration    5 [ 1292]:   Objective     =      15920902.175715
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\0325da637c21485c9d4dc61e5722f8e7-pulp.lp' Clone_3 (V22.1.0.0) Sat Sep 14 12:26:54 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+Sifting iteration    4 [ 1331]:   Objective     =      15920902.175739
+Sifting iteration    5 [ 1292]:   Objective     =      15920902.175715
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\e90aa7dd92304732be69bfa7ff15ce70-pulp.lp' Clone_3 (V22.1.0.0) Mon Sep 16 19:32:40 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.02 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+Sifting iteration    4 [ 1331]:   Objective     =      15920902.175739
+Sifting iteration    5 [ 1292]:   Objective     =      15920902.175715
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\f8b9cdb93a6944ff836e63f14cfdaa66-pulp.lp' Clone_3 (V22.1.0.0) Mon Sep 16 19:35:34 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.05 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1323]:   Objective     =      15930516.786786
+Sifting iteration    4 [ 1331]:   Objective     =      15920902.175739
+Sifting iteration    5 [ 1292]:   Objective     =      15920902.175715
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shivam1\AppData\Local\Temp\d1545a722be94ad1903b348fc112a5c5-pulp.lp' Clone_3 (V22.1.0.0) Mon Sep 16 19:51:13 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 864 rows and 12912 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 8998 columns, and 17809 nonzeros.
+Presolve time = 0.03 sec. (18.30 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  765]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1265]:   Scaled infeas =             0.000000
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\ff76bd85f8cc4b0299a44b23d08b45e6-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 21:00:23 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 28 rows and 616 columns.
+Reduced LP has 531 rows, 11198 columns, and 22396 nonzeros.
+Presolve time = 0.02 sec. (7.73 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [ 1000]:   Scaled infeas =             0.000000
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\a6a693542402440da8aa5004ac00147c-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 21:01:44 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 28 rows and 616 columns.
+Reduced LP has 531 rows, 11198 columns, and 22396 nonzeros.
+Presolve time = 0.02 sec. (7.73 ticks)
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\e59543454aa246ee9580c2ac1b3667c6-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 22:31:53 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.52 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  775]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1275]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1334]:   Objective     =      16237979.265690
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\a6774b551a4f4012bbb68276dc2321df-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 22:38:35 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.05 sec. (17.52 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  775]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1275]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1334]:   Objective     =      16237979.265690
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\261aa5bf460042cf83e3b8dfa16e918a-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 22:45:03 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.52 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  775]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1275]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1334]:   Objective     =      16237979.265690
+Sifting iteration    4 [ 1344]:   Objective     =      16228364.647409
+Sifting iteration    5 [ 1305]:   Objective     =      16228364.645547
+
+Iteration log . . .
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Shallu\AppData\Local\Temp\7d7aed81ab8844eb8b39abce935e18ce-pulp.lp' Clone_3 (V22.1.0.0) Thu Sep 19 22:45:49 2024
+
+Tried aggregator 1 time.
+LP Presolve eliminated 862 rows and 11834 columns.
+Aggregator did 107 substitutions.
+Reduced LP has 229 rows, 9002 columns, and 17813 nonzeros.
+Presolve time = 0.03 sec. (17.52 ticks)
+
+Iteration log . . .
+Sifting iteration    1 [  775]:   Scaled infeas =         59532.991498
+Sifting iteration    2 [ 1275]:   Scaled infeas =             0.000000
+Sifting iteration    3 [ 1334]:   Objective     =      16237979.265690
+Sifting iteration    4 [ 1344]:   Objective     =      16228364.647409
+Sifting iteration    5 [ 1305]:   Objective     =      16228364.645547
+
+Iteration log . . .
+
+Dual simplex solved model.
+
