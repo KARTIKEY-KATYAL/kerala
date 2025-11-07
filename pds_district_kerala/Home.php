@@ -142,7 +142,7 @@ if($currentTimestamp >= $targetTimestamp) {
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li class="active">Kerala Intra Route Optimization For PDS</li>
+                    <li class="active">Kerala Intra Route Optimisation For PDS</li>
                 </ul>
                 <!-- END BREADCRUMB -->
 
@@ -156,7 +156,7 @@ if($currentTimestamp >= $targetTimestamp) {
                             <!-- START SIMPLE DATATABLE -->
                             <div class="panel panel-default">
 								<div class="panel-heading">
-                                    <h3 class="panel-title">Kerala Intra Route Optimization For PDS District - <b><?php echo $district; ?></b> <div id="timer"> <b>Time Left &nbsp </b> <span id="countdown"></span></h3>
+                                    <h3 class="panel-title">Kerala Intra Route Optimisation For PDS District - <b><?php echo $district; ?></b> <div id="timer"> <b>Time Left &nbsp </b> <span id="countdown"></span></h3>
                                 </div>
                             </div>
 							<div class="row">
@@ -273,9 +273,9 @@ if($currentTimestamp >= $targetTimestamp) {
 												<th style="font-size:16px">To_District</th>
 												<th style="font-size:16px">To_Lat</th>
 												<th style="font-size:16px">To_Long</th>
-												<th style="font-size:16px">commodity</th>
-												<th style="font-size:16px">quantity</th>
-												<th style="font-size:16px">Distance</th>
+												<th style="font-size:16px">Commodity</th>
+												<th style="font-size:16px">Quantity (Qtl)</th>
+												<th style="font-size:16px">Distance (Km)</th>
 												<th style="font-size:16px">District Reviewed</th>
 												<th style="font-size:16px">District Suggested Warehouse</th>
 												<th style="font-size:16px">District Reason for not Approve</th>
@@ -486,7 +486,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				
 				const csvResponse = await fetch('api/DownloadOptimalData.php?format=csv');
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'Kerala_Result' + getDateString() + '.csv');
+				downloadFile(csvBlob, 'Optimised_Planning_' + getDateString() + '.csv');
 			} catch (error) {
 				console.error('Error downloading CSV file:', error);
 			}
@@ -507,7 +507,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				
 				const excelResponse = await fetch('api/DownloadOptimalData.php?format=xlsx');
 				const excelBlob = await excelResponse.blob();
-				downloadFile(excelBlob, 'Kerala_Result' + getDateString() + '.xlsx');
+				downloadFile(excelBlob, 'Optimised_Planning_' + getDateString() + '.xlsx');
 			} catch (error) {
 				console.error('Error downloading XLSX file:', error);
 			}
@@ -518,7 +518,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				
 				const excelResponse = await fetch('api/DownloadOptimalData.php?format=pdf');
 				const excelBlob = await excelResponse.blob();
-				downloadFile(excelBlob, 'Kerala_Result' + getDateString() + '.pdf');
+				downloadFile(excelBlob, 'Optimised_Planning_' + getDateString() + '.pdf');
 			} catch (error) {
 				console.error('Error downloading PDF file:', error);
 			}

@@ -283,9 +283,9 @@ while($row = mysqli_fetch_array($result))
 										<th style="font-size:16px">To_District</th>
 										<th style="font-size:16px">To_Lat</th>
 										<th style="font-size:16px">To_Long</th>
-										<th style="font-size:16px">commodity</th>
-										<th style="font-size:16px">quantity</th>
-										<th style="font-size:16px">Distance</th>
+										<th style="font-size:16px">Commodity</th>
+										<th style="font-size:16px">Quantity (Qtl) </th>
+										<th style="font-size:16px">Distance (Km)</th>
 										<th style="font-size:16px">District Suggested Warehouse</th>
 										<th style="font-size:16px">District Reason for not Approve</th>
 										<th style="font-size:16px">District Suggested Warehouse Distance</th>
@@ -421,8 +421,16 @@ while($row = mysqli_fetch_array($result))
 				document.getElementById(selectedId + "_iddistance").value = '';
 				document.getElementById(selectedId + "_iddistance").disabled = false;
 			}
-			else{
+			else if(newvalue=="same"){
 				modifiedData[selectedId] = "same";
+				document.getElementById(selectedId).value = '';
+				document.getElementById(selectedId).disabled = true;
+				document.getElementById(selectedId + "_idreason").disabled = true;
+				document.getElementById(selectedId + "_iddistance").value = '';
+				document.getElementById(selectedId + "_iddistance").disabled = true;
+			}
+			else{
+				modifiedData[selectedId] = "";
 				document.getElementById(selectedId).value = '';
 				document.getElementById(selectedId).disabled = true;
 				document.getElementById(selectedId + "_idreason").disabled = true;
@@ -455,7 +463,7 @@ while($row = mysqli_fetch_array($result))
 				var district = document.getElementById("district").value;
 				const csvResponse = await fetch('api/DownloadOptimalData.php?format=csv&month=' + month + "&district=" + district);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'OptimizePlan_' + getDateString() + '.csv');
+				downloadFile(csvBlob, 'Optimise_Plan_Leg2_' + getDateString() + '.csv');
 			} catch (error) {
 				console.error('Error downloading CSV file:', error);
 			}
@@ -467,7 +475,7 @@ while($row = mysqli_fetch_array($result))
 				var district = document.getElementById("district").value;
 				const csvResponse = await fetch('api/DownloadOptimalData.php?format=pdf&month=' + month + "&district=" + district);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'OptimizePlan_' + getDateString() + '.pdf');
+				downloadFile(csvBlob, 'Optimise_Plan_Leg2_' + getDateString() + '.pdf');
 			} catch (error) {
 				console.error('Error downloading PDF file:', error);
 			}
@@ -489,7 +497,7 @@ while($row = mysqli_fetch_array($result))
 				var district = document.getElementById("district").value;
 				const excelResponse = await fetch('api/DownloadOptimalData.php?format=xlsx&month=' + month + "&district=" + district);
 				const excelBlob = await excelResponse.blob();
-				downloadFile(excelBlob, 'OptimizePlan_' + getDateString() + '.xlsx');
+				downloadFile(excelBlob, 'Optimise_Plan_Leg2_' + getDateString() + '.xlsx');
 			} catch (error) {
 				console.error('Error downloading XLSX file:', error);
 			}
@@ -669,18 +677,6 @@ while($row = mysqli_fetch_array($result))
 								var subpart1 = "<tr><td>" +  obj[datafield]["scenario"] +  "</td><td>"  + obj[datafield]["from"] +  "</td><td>"  + obj[datafield]["from_state"] +  "</td><td>"  + obj[datafield]["from_id"] +  "</td><td>"  + obj[datafield]["from_name"] +  "</td><td>"  + obj[datafield]["from_district"] +  "</td><td>"  + obj[datafield]["from_lat"] +  "</td><td>"  + obj[datafield]["from_long"] +  "</td><td>"  + obj[datafield]["to"] +  "</td><td>"  + obj[datafield]["to_state"] +  "</td><td>"  + obj[datafield]["to_id"] +  "</td><td>"  + obj[datafield]["to_name"] +  "</td><td>"  + obj[datafield]["to_district"] +  "</td><td>"  + obj[datafield]["to_lat"] +  "</td><td>"  + obj[datafield]["to_long"] +  "</td><td>"  + obj[datafield]["commodity"] +  "</td><td>"  + obj[datafield]["quantity"] +  "</td><td>"  + obj[datafield]["distance"] + "</td>";
 								
 								
-								if(approve_admin=="yes"){
-									var approve_admin_part = "<td><button class='btn btn-info'>Already Reviewed</button></td>";
-								}
-								else if(approve_admin=="no"){
-									var approve_admin_part = "<td><button class='btn btn-danger'>Not Approved</button></td>";
-								}
-								else{
-									var approve_admin_part = "<td><select class='form-control' onchange='enableDisable(\"" + uniqueid + "\")' id='" + uniqueid_bool + "' name='" + uniqueid_bool + "' required><option value=''>Select</option><option value='yes'>Approve District</option><option value='same'>Keep System Generated</option><option value='no'>Change ID</option></select></td>";
-									uniqueid_array.push(uniqueid_bool);
-
-								}
-								
 								if(approve_district=="yes"){
 									var approve_district_part = "<td><button class='btn btn-info'>Already Reviewed</button></td>";
 								}
@@ -743,9 +739,18 @@ while($row = mysqli_fetch_array($result))
 								}
 								if(approve_district==""){
 									subpart1 = subpart1 + "<td>" + newid_district + "</td><td>" + reason_district + "</td><td>" + distance_district  + approve_district_part + "</td><td></td><td></td><td></td><td></td></tr>";
-
 								}
 								else{
+									if(approve_admin=="yes"){
+										var approve_admin_part = "<td><button class='btn btn-info'>Already Reviewed</button></td>";
+									}
+									else if(approve_admin=="no"){
+										var approve_admin_part = "<td><button class='btn btn-danger'>Not Approved</button></td>";
+									}
+									else{
+										var approve_admin_part = "<td><select class='form-control' onchange='enableDisable(\"" + uniqueid + "\")' id='" + uniqueid_bool + "' name='" + uniqueid_bool + "' required><option value=''>Select</option><option value='yes'>Approve District</option><option value='same'>Keep System Generated</option><option value='no'>Change ID</option></select></td>";
+										uniqueid_array.push(uniqueid_bool);
+									}
 									subpart1 = subpart1 + "<td>" + newid_district + "</td><td>" + reason_district + "</td><td>" + distance_district + approve_district_part + approve_admin_part + admin_reason + newid_admin_part + distance_admin_part + "</tr>";
 								}
 								$('#table_body').append(subpart1);

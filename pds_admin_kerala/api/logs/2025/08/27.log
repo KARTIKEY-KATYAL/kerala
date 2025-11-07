@@ -1,0 +1,5 @@
+[2025-08-27 17:19:35] User -> User Add ->admin@pds| Requested JSON -> {"newusername":"Alappuzha@pds","district":"Alappuzha","newpassword":"Alappuzha"} | Alappuzha@pds
+[2025-08-27 17:23:47] User -> Verify User ->admin@pds| Requested JSON -> {"uid":"68aef0cf20af5"} | Alappuzha@pds
+[2025-08-27 18:26:08] User -> User Add ->admin@pds| Requested JSON -> {"newusername":"Ernakulam@pds","district":"Ernakulam","newpassword":"Ernakulam"} | Ernakulam@pds
+[2025-08-27 18:26:36] User -> User Add ->admin@pds| Requested JSON -> {"newusername":"Idukki@pds","district":"Idukki","newpassword":"Idukki"} | Idukki@pds
+[2025-08-27 18:27:00] User -> User Add ->admin@pds| Requested JSON -> {"newusername":"Kannur@pds","district":"Kannur","newpassword":"Kannur"} | Kannur@pds

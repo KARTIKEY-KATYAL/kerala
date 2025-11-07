@@ -2,6 +2,7 @@
 require('../util/Connection.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -19,10 +20,12 @@ if($numrows>0){
 	$status = $row['active'];
 	if($status==0){
 		$query = "UPDATE fps SET active='1' WHERE type='Model FPS'";
+		writeLog("User ->" ." Model FPS Active -> ". $_SESSION['user'] . "| " . $fpsname);
 		mysqli_query($con,$query);
 	}
 	else{
 		$query = "UPDATE fps SET active='0' WHERE type='Model FPS'";
+		writeLog("User ->" ." Model FPS InActive -> ". $_SESSION['user'] . "| " . $fpsname);
 		mysqli_query($con,$query);
 	}
 }

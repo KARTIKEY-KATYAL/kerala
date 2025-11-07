@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/Mill.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -34,6 +35,13 @@ if($numrows == 0){
 $DCP = new DCP;
 $DCP->setUniqueid($_POST['uid']);
 
+$log_query = $DCP->logname($DCP);
+echo $log_query;
+$log_result = mysqli_query($con,$log_query);
+if ($log_result && $row = $log_result->fetch_assoc()) {
+	$log_name =  $row['name'];
+}
+
 $query = $DCP->delete($DCP);
 
 if($_POST['uid']=="all"){
@@ -42,6 +50,10 @@ if($_POST['uid']=="all"){
 
 mysqli_query($con,$query);
 mysqli_close($con);
+
+$filteredPost = $_POST;
+unset($filteredPost['username'], $filteredPost['password']);
+writeLog("District User ->" ." Mill deleted -> ". $_SESSION['district_user'] . "| Requested JSON -> " . json_encode($filteredPost) . " | " . $log_name);
 
 echo "<script>window.location.href = '../Mill.php';</script>";
 

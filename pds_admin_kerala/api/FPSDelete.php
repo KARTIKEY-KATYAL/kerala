@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/FPS.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -33,14 +34,28 @@ if($numrows == 0){
 $FPS = new FPS;
 $FPS->setUniqueid($_POST['uid']);
 
+
+
 $query = $FPS->delete($FPS);
 
 if($_POST['uid']=="all"){
 	$query = $FPS->deleteall($FPS);
 }
 
+$log_query = $FPS->logname($FPS);
+$log_name= "all";
+$log_result = mysqli_query($con,$log_query);
+if ($log_result && $row = $log_result->fetch_assoc()) {
+	$log_name =  $row['name'];
+}
+
 mysqli_query($con,$query);
 mysqli_close($con);
+
+$filteredPost = $_POST;
+unset($filteredPost['username'], $filteredPost['password']);
+writeLog("User ->" ." FPS deleted -> ". $_SESSION['user'] . "| Requested JSON -> " . json_encode($filteredPost) . " | " . $log_name);
+
 echo "<script>window.location.href = '../FPS.php';</script>";
 
 

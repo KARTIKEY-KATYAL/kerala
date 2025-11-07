@@ -2,6 +2,7 @@
 
 require('../util/Connection.php');
 require('../util/SessionFunction.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -18,12 +19,15 @@ $numrows = mysqli_num_rows($result);
 if($numrows>0){
 	$row = mysqli_fetch_assoc($result);
 	$status = $row['active'];
+	$fpsname = $row['name'];
 	if($status==0){
 		$query = "UPDATE fps SET active='1' WHERE uniqueid='$id'";
+		writeLog("District User ->" ." FPS Active -> ". $_SESSION['district_user'] . "| " . $fpsname);
 		mysqli_query($con,$query);
 	}
 	else{
 		$query = "UPDATE fps SET active='0' WHERE uniqueid='$id'";
+		writeLog("District User ->" ." FPS InActive -> ". $_SESSION['district_user'] . "| " . $fpsname);
 		mysqli_query($con,$query);
 	}
 }

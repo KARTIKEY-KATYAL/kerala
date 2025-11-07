@@ -61,6 +61,18 @@ else{
 		}
 	}
 </script>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
+
+<script>
+	function verifyCaptcha() {
+		var readableString = document.getElementById("password").value;
+		var nonceValue = "nonce_value";
+		let encryption = new Encryption();
+		var encrypted = encryption.encrypt(readableString, nonceValue);
+		document.getElementById("password").value = encrypted;
+	}
+</script>
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="DCP.php">Home</a></li>
@@ -209,7 +221,7 @@ else{
                                                 </div>
                                             </div>
                                         </div>
-										<center><button class="btn btn-primary">Verify</button></center>
+										<center><button class="btn btn-primary" onclick="verifyCaptcha()">Verify</button></center>
 								</div>
                             </div>
                             </form>

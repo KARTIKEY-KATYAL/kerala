@@ -1,8 +1,12 @@
 <?php
 require('../util/Connection.php');
-require('../structures/DCP.php');
+require('../structures/Mill.php');
 require('../util/SessionFunction.php');
+require('../structures/Login.php');
+require('../util/Logger.php');
 ini_set('max_execution_time', 3000);
+session_start();
+
 
 require('Header.php');
 
@@ -20,6 +24,24 @@ $mapData = [
 
 // Reverse mapping
 $reverseMapData = array_flip($mapData);
+
+$person = new Login;
+$person->setUsername($_POST["username"]);
+$person->setPassword($_POST["password"]);
+
+if($_SESSION['district_user']!=$person->getUsername()){
+	echo "User is logged in with different username and password";
+	return;
+}
+
+$query = "SELECT * FROM login WHERE username='".$person->getUsername()."' AND password='".$person->getPassword()."'";
+$result = mysqli_query($con,$query);
+$numrows = mysqli_num_rows($result);
+
+if($numrows == 0){
+	echo "Error : Password or Username is incorrect";
+	return;
+}
 
 $districts = [];
 $query = "SELECT name FROM districts WHERE 1";
@@ -244,6 +266,7 @@ try{
 						echo "</br>";
 						$redirect = 0;
 					}
+					writeLog("District User ->" ." Mill Edit -> ". $_SESSION['district_user'] . "| " . $DCP->getName());
 					$query_update = $DCP->updateEdit($DCP);
 					mysqli_query($con, $query_update);
 				}

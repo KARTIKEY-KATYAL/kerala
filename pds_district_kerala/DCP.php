@@ -15,6 +15,8 @@ td {
 	color: black;
 }
 </style>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
 
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
@@ -221,7 +223,10 @@ td {
 			var username = document.getElementById('username').value;
 			var password = document.getElementById('password').value;
 			var temp_id = document.getElementById('deleteid').value;
-			post({uid: temp_id,username:username,password:password} ,"api/DCPDelete.php");
+			var nonceValue = "nonce_value";
+			let encryption = new Encryption();
+			var encrypted = encryption.encrypt(password, nonceValue);
+			post({uid: temp_id,username:username,password:encrypted} ,"api/DCPDelete.php");
 		}
 		
 		function hidePopup() {

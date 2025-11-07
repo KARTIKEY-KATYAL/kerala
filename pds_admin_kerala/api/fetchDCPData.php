@@ -1,8 +1,14 @@
 <?php
 require('../util/Connection.php');
 
+function isOnlyCharacters($input) {
+    if (!preg_match('/^[a-zA-Z]+$/', $input)) {
+        die("");
+    }
+    return true;
+}
 
-$district = $_POST['district'];
+$district = isOnlyCharacters($_POST['district']);
 
 $query = "SELECT * FROM dcp WHERE district='$district'";
 $result = mysqli_query($con,$query);

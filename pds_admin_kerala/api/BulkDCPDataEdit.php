@@ -2,7 +2,10 @@
 require('../util/Connection.php');
 require('../structures/DCP.php');
 require('../util/SessionFunction.php');
+require('../structures/Login.php');
+require('../util/Logger.php');
 ini_set('max_execution_time', 3000);
+session_start();
 
 require('Header.php');
 
@@ -20,6 +23,24 @@ $mapData = [
 
 // Reverse mapping
 $reverseMapData = array_flip($mapData);
+
+$person = new Login;
+$person->setUsername($_POST["username"]);
+$person->setPassword($_POST["password"]);
+
+if($_SESSION['user']!=$person->getUsername()){
+	echo "User is logged in with different username and password";
+	return;
+}
+
+$query = "SELECT * FROM login WHERE username='".$person->getUsername()."' AND password='".$person->getPassword()."'";
+$result = mysqli_query($con,$query);
+$numrows = mysqli_num_rows($result);
+
+if($numrows == 0){
+	echo "Error : Password or Username is incorrect";
+	return;
+}
 
 $districts = [];
 $query = "SELECT name FROM districts WHERE 1";
@@ -134,7 +155,7 @@ try{
 					$DCP->setLatitude($column[$latitude]);
 					$DCP->setLongitude($column[$longitude]);
 					$DCP->setName($column[$name]);
-					$DCP->setId((int)$column[$id]);
+					$DCP->setId($column[$id]);
 					$DCP->setType($column[$type]);
 					$DCP->setDemand($column[$demand]);
 					$DCP->setDemandrice($column[$demand_rice]);
@@ -143,7 +164,7 @@ try{
 					$query_result = mysqli_query($con, $query_check);
 					$numrows = mysqli_num_rows($query_result);
 					if($numrows==0){
-						echo "Error : Error in loading data as DCP id doesn't exist : ".(int)$column[$id];
+						echo "Error : Error in loading data as DCP id doesn't exist : ".$column[$id];
 						echo "</br>";
 						$redirect = 0;
 					}
@@ -244,6 +265,7 @@ try{
 						echo "</br>";
 						$redirect = 0;
 					}
+					writeLog("User ->" ." Mill Edit -> ". $_SESSION['user'] . "| " . $DCP->getName());
 					$query_update = $DCP->updateEdit($DCP);
 					mysqli_query($con, $query_update);
 				}

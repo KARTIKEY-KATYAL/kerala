@@ -1,0 +1,17 @@
+[2025-01-22 11:11:02] User -> District added ->admin@pds| Requested JSON -> {"name":"Demo"}
+[2025-01-22 11:11:43] User -> District Name Edit->admin@pds| Requested JSON -> {"name":"Demo New","uid":"'679084ee6d912'"}
+[2025-01-22 11:12:18] User -> District deleted -> admin@pds| Requested JSON -> {"uid":"679084ee6d912"} | 
+[2025-01-22 11:21:32] User -> District added ->admin@pds| Requested JSON -> {"name":"Demo"}
+[2025-01-22 11:21:43] User -> District deleted -> admin@pds| Requested JSON -> {"uid":"679087644f35d"} | Demo
+[2025-01-22 11:35:23] User -> FPS added ->admin@pds| Requested JSON -> {"name":"Demo","type":"Model FPS","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11A","demand":"100","demand_rice":"110","demand_frice":"120"}
+[2025-01-22 11:36:11] User -> District Name Edit->admin@pds| Requested JSON -> {"name":"Test Data","uniqueid":"FPS_67908aa2efa","active":"1","type":"Model FPS","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11A","demand":"100","demand_rice":"110","demand_frice":"120"}
+[2025-01-22 11:37:59] User -> FPS deleted -> admin@pds| Requested JSON -> {"uid":"FPS_67908aa2efa"} | 
+[2025-01-22 12:37:03] User -> FPS added ->admin@pds| Requested JSON -> {"name":"Demo","type":"Model FPS","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11B","demand":"100","demand_rice":"110","demand_frice":"120"}
+[2025-01-22 12:37:47] User -> District Name Edit->admin@pds| Requested JSON -> {"name":"Test Data","uniqueid":"FPS_6790991744e","active":"1","type":"Model FPS","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11B","demand":"100","demand_rice":"110","demand_frice":"120"}
+[2025-01-22 12:38:33] User -> FPS deleted -> admin@pds| Requested JSON -> {"uid":"FPS_6790991744e"} | Test Data
+[2025-01-22 12:56:41] User -> Warehouse added ->admin@pds| Requested JSON -> {"name":"Demo","type":"motorable","latitude":"23.333","storage":"100","district":"Alappuzha","id":"11C","warehousetype":"swc","longitude":"78.888"}
+[2025-01-22 12:57:12] User -> Warehouse Name Edit->admin@pds| Requested JSON -> {"name":"Test Data","uniqueid":"WH_67909db173ea","active":"1","type":"motorable","latitude":"23.333","storage":"100","district":"Alappuzha","id":"11C","warehousetype":"swc","longitude":"78.888"}
+[2025-01-22 12:58:14] User -> Warehouse deleted -> admin@pds| Requested JSON -> {"uid":"WH_67909db173ea"} | Test Data
+[2025-01-22 13:05:26] User -> Mill added ->admin@pds| Requested JSON -> {"name":"Demo","type":"Mill","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11A","demand":"100","demand_rice":"90"}
+[2025-01-22 13:05:57] User -> Mill Name Edit->admin@pds| Requested JSON -> {"name":"Test Data","uniqueid":"DCP_67909fbe943","active":"1","type":"Mill","latitude":"23.333","longitude":"78.888","district":"Alappuzha","id":"11A","demand":"100","demand_rice":"90"}
+[2025-01-22 13:06:31] User -> Mill deleted -> admin@pds| Requested JSON -> {"uid":"DCP_67909fbe943"} | Test Data

@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/FPS.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -109,6 +110,9 @@ if($numrows_insert==0){
 	$query = $FPS->insert($FPS);
 	mysqli_query($con, $query);
 	mysqli_close($con);
+	$filteredPost = $_POST;
+	unset($filteredPost['username'], $filteredPost['password']);
+	writeLog("District User ->" ." FPS added ->". $_SESSION['district_user'] . "| Requested JSON -> " . json_encode($filteredPost));
 	echo "<script>window.location.href = '../FPS.php';</script>";
 }
 else{

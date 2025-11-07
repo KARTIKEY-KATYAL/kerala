@@ -69,7 +69,7 @@ if(isset($_POST['step'])){
 												<th style="font-size:15px">Warehouse Type</th>
 												<th style="font-size:15px">Latitude</th>
 												<th style="font-size:15px">Longitude</th>
-												<th style="font-size:15px">Storage</th>
+												<th style="font-size:15px">Storage (Qtl)</th>
                                             </tr>
                                         </thead>
                                         <tbody>

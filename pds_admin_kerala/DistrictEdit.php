@@ -15,10 +15,19 @@ if($numrows!=0)
 	 $name = $row['name'];
     }
 }
-
-
 ?>
-              
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
+
+<script>
+	function verifyCaptcha() {
+		var readableString = document.getElementById("password").value;
+		var nonceValue = "nonce_value";
+		let encryption = new Encryption();
+		var encrypted = encryption.encrypt(readableString, nonceValue);
+		document.getElementById("password").value = encrypted;
+	}
+</script>           
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>                    
@@ -98,7 +107,7 @@ if($numrows!=0)
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="password" class="form-control" id="password" name="password" required />
+                                                        <input type="password" class="form-control" id="password" name="password" required autocomplete="off"/>
                                                     </div>
                                                     <span class="help-block">Password</span>
                                                 </div>
@@ -107,7 +116,7 @@ if($numrows!=0)
 											
                                         </div>
 										
-										<center><button class="btn btn-primary">Verify</button></center>
+										<center><button class="btn btn-primary" onclick="verifyCaptcha()">Verify</button></center>
 								</div>
                             </div>
                             </form>

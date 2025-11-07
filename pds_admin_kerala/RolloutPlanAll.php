@@ -160,9 +160,9 @@ require('Header.php');
 												<th style="font-size:16px">To_District</th>
 												<th style="font-size:16px">To_Lat</th>
 												<th style="font-size:16px">To_Long</th>
-												<th style="font-size:16px">commodity</th>
-												<th style="font-size:16px">quantity</th>
-												<th style="font-size:16px">Distance</th>
+												<th style="font-size:16px">Commodity</th>
+												<th style="font-size:16px">Quantity (Qtl)</th>
+												<th style="font-size:16px">Distance (Km)</th>
 												<th style="font-size:16px">Status</th>
                                             </tr>
                                         </thead>
@@ -284,7 +284,7 @@ require('Header.php');
 			var district = document.getElementById("district").value;
 			const csvResponse = await fetch('api/DownloadOptimalDataLeg1All.php?format=csv&month=' + month + "&district=" + district);
 			const csvBlob = await csvResponse.blob();
-			downloadFile(csvBlob, 'RolloutPlan_' + getDateString() + '.csv');
+			downloadFile(csvBlob, 'Final_RolloutPlan_' + getDateString() + '.csv');
 		} catch (error) {
 			console.error('Error downloading CSV file:', error);
 		}
@@ -297,7 +297,7 @@ require('Header.php');
 			var district = document.getElementById("district").value;
 			const excelResponse = await fetch('api/DownloadOptimalDataLeg1All.php?format=xlsx&month=' + month + "&district=" + district);
 			const excelBlob = await excelResponse.blob();
-			downloadFile(excelBlob, 'RolloutPlan_' + getDateString() + '.xlsx');
+			downloadFile(excelBlob, 'Final_RolloutPlan_' + getDateString() + '.xlsx');
 		} catch (error) {
 			console.error('Error downloading XLSX file:', error);
 		}
@@ -309,7 +309,7 @@ require('Header.php');
 			var district = document.getElementById("district").value;
 			const csvResponse = await fetch('api/DownloadOptimalDataLeg1All.php?format=pdf&month=' + month + "&district=" + district);
 			const csvBlob = await csvResponse.blob();
-			downloadFile(csvBlob, 'RolloutPlan_' + getDateString() + '.pdf');
+			downloadFile(csvBlob, 'Final_RolloutPlan_' + getDateString() + '.pdf');
 		} catch (error) {
 			console.error('Error downloading PDF file:', error);
 		}
@@ -449,7 +449,7 @@ require('Header.php');
 						var obj = resultarray["table"];
 						var thead = document.createElement("thead");
 						var headerRow = document.createElement("tr");
-						var headers = ["Scenario", "F_Rice + Rice (Qtls) Moved", "Distance (Kms)", "QKM", "Ave. Distance (Kms)*", "%Reduction w.r.t Avg. Distance in Baseline"];
+						var headers = ["Scenario", "Wheat + FRice + Rice Moved (Qtls) ", "Distance (Kms)", "QKM", "Ave. Distance (Kms)*", "%Reduction w.r.t Avg. Distance in Baseline"];
 						headers.forEach(function(headerText) {
 							var th = document.createElement("th");
 							th.textContent = headerText;

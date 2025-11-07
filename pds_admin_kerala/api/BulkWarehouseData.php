@@ -2,7 +2,10 @@
 require('../util/Connection.php');
 require('../structures/Warehouse.php');
 require('../util/SessionFunction.php');
+require('../structures/Login.php');
+require('../util/Logger.php');
 ini_set('max_execution_time', 3000);
+session_start();
 
 require('Header.php');
 
@@ -20,6 +23,24 @@ $mapData = [
 
 // Reverse mapping
 $reverseMapData = array_flip($mapData);
+
+$person = new Login;
+$person->setUsername($_POST["username"]);
+$person->setPassword($_POST["password"]);
+
+if($_SESSION['user']!=$person->getUsername()){
+	echo "User is logged in with different username and password";
+	return;
+}
+
+$query = "SELECT * FROM login WHERE username='".$person->getUsername()."' AND password='".$person->getPassword()."'";
+$result = mysqli_query($con,$query);
+$numrows = mysqli_num_rows($result);
+
+if($numrows == 0){
+	echo "Error : Password or Username is incorrect";
+	return;
+}
 
 $districts = [];
 $query = "SELECT name FROM districts WHERE 1";
@@ -201,6 +222,7 @@ try{
 					$query_insert_result = mysqli_query($con, $query_insert_check);
 					$numrows_insert = mysqli_num_rows($query_insert_result);
 					if($numrows_insert==0){
+						writeLog("User ->" ." Warehouse Added -> ". $_SESSION['user'] . "| " . $Warehouse->getName());
 						$query_add = $Warehouse->insert($Warehouse);
 						mysqli_query($con, $query_add);
 					}

@@ -140,7 +140,7 @@ if($currentTimestamp >= $targetTimestamp) {
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
-                    <li class="active">Andhra Pradesh Intra Route Optimization For PDS</li>
+                    <li class="active">Kerala Intra Route Optimisation For PDS</li>
                 </ul>
                 <!-- END BREADCRUMB -->
 
@@ -154,7 +154,7 @@ if($currentTimestamp >= $targetTimestamp) {
                             <!-- START SIMPLE DATATABLE -->
                             <div class="panel panel-default">
 								<div class="panel-heading">
-                                    <h3 class="panel-title">Andhra Pradesh Intra Route Optimization For PDS <div id="timer"> <b>Time Left &nbsp </b> <span id="countdown"></span></h3>
+                                    <h3 class="panel-title">Kerala Intra Route Optimisation For PDS <div id="timer"> <b>Time Left &nbsp </b> <span id="countdown"></span></h3>
                                 </div>
                             </div>
 							<div class="row">
@@ -271,8 +271,8 @@ if($currentTimestamp >= $targetTimestamp) {
 												<th style="font-size:16px">To_Lat</th>
 												<th style="font-size:16px">To_Long</th>
 												<th style="font-size:16px">Commodity</th>
-												<th style="font-size:16px">Quantity</th>
-												<th style="font-size:16px">Distance</th>
+												<th style="font-size:16px">Quantity (Qtl)</th>
+												<th style="font-size:16px">Distance (Km)</th>
 												<th style="font-size:16px">RO Accepted</th>
 												<th style="font-size:16px">FCI Release Warehouse</th>
 												<th style="font-size:16px">Reason for not Approve</th>
@@ -483,7 +483,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				var district = document.getElementById("district").value;
 				const csvResponse = await fetch('api/DownloadOptimalDataLeg1.php?format=csv'+ "&district=" + district);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'OptimisedData_Leg1_' + getDateString() + '.csv');
+				downloadFile(csvBlob, 'Optimised_Data_Leg1_' + getDateString() + '.csv');
 			} catch (error) {
 				console.error('Error downloading CSV file:', error);
 			}
@@ -494,7 +494,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				var district = document.getElementById("district").value;
 				const csvResponse = await fetch('api/DownloadOptimalDataLeg1.php?format=pdf'+ "&district=" + district);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'OptimisedData_Leg1_' + getDateString() + '.pdf');
+				downloadFile(csvBlob, 'Optimised_Data_Leg1_' + getDateString() + '.pdf');
 			} catch (error) {
 				console.error('Error downloading PDF file:', error);
 			}
@@ -515,7 +515,7 @@ if($currentTimestamp >= $targetTimestamp) {
 				var district = document.getElementById("district").value;
 				const excelResponse = await fetch('api/DownloadOptimalDataLeg1.php?format=xlsx'+ "&district=" + district);
 				const excelBlob = await excelResponse.blob();
-				downloadFile(excelBlob, 'OptimisedData_Leg1_' + getDateString() + '.xlsx');
+				downloadFile(excelBlob, 'Optimised_Data_Leg1_' + getDateString() + '.xlsx');
 			} catch (error) {
 				console.error('Error downloading XLSX file:', error);
 			}
@@ -544,7 +544,6 @@ if($currentTimestamp >= $targetTimestamp) {
 				},
 				timeout: 59000,
 				success: function(result){
-					console.log(result);
 					try{
 						var selectInput = document.getElementById("from_id");
 						while (selectInput.options.length > 0) {
@@ -644,7 +643,6 @@ if($currentTimestamp >= $targetTimestamp) {
 					},
 					timeout: 59000,
 					success: function(result){
-						console.log(result);
 						$('#table_body').empty();
 						try{
 							var resultarray = JSON.parse(result);
@@ -678,8 +676,6 @@ if($currentTimestamp >= $targetTimestamp) {
 								//var distance_district = obj[datafield]["new_distance_district"] !== null ? obj[datafield]["new_distance_district"] : "";
 								//var district_change_approve = obj[datafield]["district_change_approve"] !== null ? obj[datafield]["district_change_approve"] : "";
 								
-								uniqueid_bool_array.push(uniqueid_bool);
-								
 								var subpart1 = "<tr><td>" +  obj[datafield]["scenario"] +  "</td><td>"  + obj[datafield]["from"] +  "</td><td>"  + obj[datafield]["from_state"] +  "</td><td>"  + obj[datafield]["from_id"] +  "</td><td>"  + obj[datafield]["from_name"] +  "</td><td>"  + obj[datafield]["from_district"] +  "</td><td>"  + obj[datafield]["from_lat"] +  "</td><td>"  + obj[datafield]["from_long"] +  "</td><td>"  + obj[datafield]["to"] +  "</td><td>"  + obj[datafield]["to_state"] +  "</td><td>"  + obj[datafield]["to_id"] +  "</td><td>"  + obj[datafield]["to_name"] +  "</td><td>"  + obj[datafield]["to_district"] +  "</td><td>"  + obj[datafield]["to_lat"] +  "</td><td>"  + obj[datafield]["to_long"] +  "</td><td>"  + obj[datafield]["commodity"] +  "</td><td>"  + obj[datafield]["quantity"] +  "</td><td>"  + obj[datafield]["distance"] + "</td>";
 								
 								if(obj[datafield]["new_id"]==null){
@@ -708,6 +704,7 @@ if($currentTimestamp >= $targetTimestamp) {
 								}
 								else{
 									var warehouse_id_part = "<td><select class='form-control' onchange='enableDisable(\"" + uniqueid + "\")' id='" + uniqueid_bool + "' name='" + uniqueid_bool + "'><option value=''>Select</option><option value='yes'>Agree</option><option value='no'>Change ID</option></select></td><td><select class='form-control' onchange='handleNewIdChange(\"" + uniqueid + "\")' id='" + uniqueid + "' name='" + uniqueid + "' disabled><option value=''>Select Id</option>" + warehousepart + "</select></td>";
+									uniqueid_bool_array.push(uniqueid_bool);
 								}
 								
 								if(distance_admin==null || distance_admin==""){

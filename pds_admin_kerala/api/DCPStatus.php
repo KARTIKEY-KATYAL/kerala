@@ -2,6 +2,7 @@
 
 require('../util/Connection.php');
 require('../util/SessionFunction.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -19,12 +20,15 @@ $numrows = mysqli_num_rows($result);
 if($numrows>0){
 	$row = mysqli_fetch_assoc($result);
 	$status = $row['active'];
+	$dcpname = $row['name'];
 	if($status==0){
 		$query = "UPDATE dcp SET active='1' WHERE uniqueid='$id'";
+		writeLog("User ->" ." Mill Active -> ". $_SESSION['user'] . "| " . $dcpname);
 		mysqli_query($con,$query);
 	}
 	else{
 		$query = "UPDATE dcp SET active='0' WHERE uniqueid='$id'";
+		writeLog("User ->" ." Mill InActive -> ". $_SESSION['user'] . "| " . $dcpname);
 		mysqli_query($con,$query);
 	}
 }

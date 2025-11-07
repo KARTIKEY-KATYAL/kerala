@@ -49,7 +49,7 @@ $district = ucfirst($_SESSION["district_district"]);
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="text" class="form-control" id="type" name="name" required />
+                                                        <input type="text" class="form-control" id="type" name="type" required />
                                                     </div>
                                                     <span class="help-block">Type</span>
                                                 </div>

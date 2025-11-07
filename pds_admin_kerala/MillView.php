@@ -53,7 +53,7 @@ $tablename1 = "dcp_leg1_".$id;
 												<th style="font-size:15px">Latitude</th>
 												<th style="font-size:15px">Longitude</th>
 												<th style="font-size:15px">Storage</th>
-												<th style="font-size:15px">Process_Capacity</th>
+												<th style="font-size:15px">Process_Capacity (Qtl)</th>
                                             </tr>
                                         </thead>
                                         <tbody>

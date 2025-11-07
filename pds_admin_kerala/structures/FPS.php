@@ -115,6 +115,10 @@ class FPS {
         return "DELETE FROM fps WHERE 1";
     }
 	
+	function logname(FPS $fps){
+        return "SELECT name FROM fps WHERE uniqueid='".$fps->getUniqueid()."'";
+    }
+	
 	function check(FPS $fps){
         return "SELECT * FROM fps WHERE uniqueid='".$fps->getUniqueid()."'";
     }

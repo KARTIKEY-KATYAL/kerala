@@ -108,6 +108,11 @@ class Warehouse {
 	function deleteall(Warehouse $warehouse){
         return "DELETE FROM warehouse WHERE 1";
     }
+	
+	function logname(Warehouse $warehouse){
+        return "SELECT name FROM warehouse WHERE uniqueid='".$warehouse->getUniqueid()."'";
+    }
+	
 	function deletealldistrict(Warehouse $warehouse, $district){
         return "DELETE FROM warehouse WHERE LOWER(district)=Lower('".$district."')";
     }

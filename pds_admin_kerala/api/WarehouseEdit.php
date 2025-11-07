@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/Warehouse.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -109,6 +110,10 @@ $query = $Warehouse->update($Warehouse);
 mysqli_query($con, $query);
 
 mysqli_close($con);
+
+$filteredPost = $_POST;
+unset($filteredPost['username'], $filteredPost['password']);
+writeLog("User ->" ." Warehouse Edit->". $_SESSION['user'] . "| Requested JSON -> " . json_encode($filteredPost));
 
 echo "<script>window.location.href = '../Warehouse.php';</script>";
 

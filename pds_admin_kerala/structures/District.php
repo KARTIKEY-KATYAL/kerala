@@ -70,7 +70,13 @@ class District{
         return "DELETE FROM Districts WHERE id='".$District->getId()."'";
 
     }
+	
+	function logname(District $District){
 
+        return "SELECT name FROM Districts WHERE id='".$District->getId()."'";
+    
+	}
+	
     function update(District $District){
 
       return  "UPDATE Districts SET name='".$District->getName()."' WHERE id = '".$District->getId()."'";

@@ -1,0 +1,16 @@
+[2025-01-28 00:02:57] User -> Cost for leg2 Added ->admin@pds| Requested JSON -> {"cost_R7ym6nTNse84du":"200"} | 
+[2025-01-28 00:17:05] {"id":"R7ym6nTNse84du"}
+[2025-01-28 00:17:05] User -> Cost for leg2 Reset ->admin@pds| Requested JSON -> {"id":"R7ym6nTNse84du"} | 
+[2025-01-28 00:17:14] User -> Cost for leg2 Added ->admin@pds| Requested JSON -> {"cost_R7ym6nTNse84du":"100"} | 
+[2025-01-28 00:17:18] {"id":"R7ym6nTNse84du"}
+[2025-01-28 00:17:18] User -> Cost for leg2 Reset ->admin@pds| Requested JSON -> {"id":"R7ym6nTNse84du"} | 
+[2025-01-28 00:17:27] User -> Cost for leg1 Reset ->admin@pds| Requested JSON -> {"id":"smQRUy6C2AastJ"} | 
+[2025-01-28 00:17:35] User -> Cost for leg1 Added ->admin@pds| Requested JSON -> {"cost_KbvGPd46cPu8xu":"","cost_smQRUy6C2AastJ":"1000"} | 
+[2025-01-28 00:21:05] User -> Save Data | approve admin change yes ->admin@pds| SC14002 - 701802A
+[2025-01-28 00:21:05] User -> Save Data | approve admin change yes ->admin@pds| SC15003 - 505801
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC14002 - 702802
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC14002 - 702802
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC14002 - 702802
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC15001 - 30401
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC15001 - 30401
+[2025-01-28 00:21:16] User -> Save Data | approve admin change yes ->admin@pds| SC15001 - 30401

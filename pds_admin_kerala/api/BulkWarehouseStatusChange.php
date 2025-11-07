@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/Warehouse.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -34,9 +35,11 @@ $status = $_POST["status"];
 
 if($status=='active'){
 	$query = "UPDATE warehouse SET active='1' WHERE district='$district'";
+	writeLog("User ->" ." Warehouse Active -> ". $_SESSION['user'] . "| " . $district);
 }
 else{
 	$query = "UPDATE warehouse SET active='0' WHERE district='$district'";
+	writeLog("User ->" ." Warehouse InActive -> ". $_SESSION['user'] . "| " . $district);
 }
 mysqli_query($con, $query);
 echo "<script>window.location.href = '../Warehouse.php';</script>";

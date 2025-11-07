@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/Mill.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -103,6 +104,9 @@ if($numrows_insert==0){
 	$query = $DCP->insert($DCP);
 	mysqli_query($con, $query);
 	mysqli_close($con);
+	$filteredPost = $_POST;
+	unset($filteredPost['username'], $filteredPost['password']);
+	writeLog("District User ->" ." Mill added ->". $_SESSION['district_user'] . "| Requested JSON -> " . json_encode($filteredPost));
 	echo "<script>window.location.href = '../Mill.php';</script>";
 }
 else{

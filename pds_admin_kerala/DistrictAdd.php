@@ -3,6 +3,18 @@ require('util/Connection.php');
 require('util/SessionCheck.php');
 require('Header.php');
 ?>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
+
+<script>
+	function verifyCaptcha() {
+		var readableString = document.getElementById("password").value;
+		var nonceValue = "nonce_value";
+		let encryption = new Encryption();
+		var encrypted = encryption.encrypt(readableString, nonceValue);
+		document.getElementById("password").value = encrypted;
+	}
+</script>
 
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
@@ -60,7 +72,7 @@ require('Header.php');
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="text" class="form-control" id="username" name="username" required />
+                                                        <input type="text" class="form-control" id="username" name="username" required autocomplete="off"/>
                                                     </div>
                                                     <span class="help-block">Username</span>
                                                 </div>
@@ -76,7 +88,7 @@ require('Header.php');
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="password" class="form-control" id="password" name="password" required />
+                                                        <input type="password" class="form-control" id="password" name="password" required autocomplete="off"/>
                                                     </div>
                                                     <span class="help-block">Password</span>
                                                 </div>
@@ -85,7 +97,7 @@ require('Header.php');
 											
                                         </div>
 										
-										<center><button class="btn btn-primary">Verify</button></center>
+										<center><button class="btn btn-primary" onclick="verifyCaptcha()">Verify</button></center>
 								</div>
                             </div>
                             </form>

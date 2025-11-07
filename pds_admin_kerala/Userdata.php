@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require('util/Connection.php');
 require('util/SessionCheck.php');
 require('Header.php');
@@ -12,8 +12,10 @@ require('Header.php');
     color: black;
     /* Optional: Font size for table header */
 }
-	</style>
-              
+</style>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
+
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>                    
@@ -40,14 +42,15 @@ require('Header.php');
                                     <table id="export_table" class="table">
                                         <thead>
                                             <tr>
-												<th>Email Id</th>
-												<th>Password</th>
+												<th>Username</th>
+												<!-- <th>Password</th> -->
                                                 <th>Verified</th>
                                                 <th>Role/District</th>
                                                 <th>Login Count</th>
                                                 <th>Last Login</th>
                                                 <th>Verify</th>
                                                 <th>Block</th>
+                                                <!-- <th>Edit</th> -->
                                                 <th>Delete</th>
                                             </tr>
                                         </thead>
@@ -68,13 +71,13 @@ require('Header.php');
 											}
 											
 											echo "<tr><td>{$row['username']}</td>".
-											 "<td>{$row['password']}</td>".
 											 "<td>$verified</td>".
-											 "<td>{$row['role']}</td>".
+											 "<td>" . strtoupper($row['role']) . "</td>".
 											 "<td>{$row['count']}</td>".
 											 "<td>{$row['lastlogin']}</td>".
 											 "<td> <button class='btn btn-success btn-rounded' onclick=\"verify_funtion('{$temp_id}')\">Verify</button></td>".
 											 "<td> <button class='btn btn-warning btn-rounded' onclick=\"block_function('{$temp_id}')\">Block</button></td>".
+											//  "<td> <button class='btn btn-info btn-rounded' onclick=\"edit_function('{$temp_id}')\">Edit</button></td>".
 											 "<td> <button class='btn btn-danger btn-rounded' onclick=\"delete_function('{$temp_id}')\">Delete</button></td></tr>";
              										
 										}
@@ -93,7 +96,7 @@ require('Header.php');
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="text" class="form-control" id="username" name="username" required />
+                                                        <input type="text" class="form-control" id="username" name="username" autocomplete="off" required />
                                                     </div>
                                                     <span class="help-block">Username</span>
                                                 </div>
@@ -109,7 +112,7 @@ require('Header.php');
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="password" class="form-control" id="password" name="password" required />
+                                                        <input type="password" class="form-control" id="password" name="password" autocomplete="off" required />
                                                     </div>
                                                     <span class="help-block">Password</span>
                                                 </div>
@@ -196,6 +199,12 @@ require('Header.php');
 			methodCalled = "delete";
 			uidCalled = temp_id;
 		}
+
+		// function edit_function(temp_id){	
+		// 	document.getElementById('popup').style.display = 'block';
+		// 	methodCalled = "edit";
+		// 	uidCalled = temp_id;
+		// }
 		
 		function block_function(temp_id){
 			document.getElementById('popup').style.display = 'block';
@@ -212,15 +221,21 @@ require('Header.php');
 		function proceed(){
 			var username = document.getElementById('username').value;
 			var password = document.getElementById('password').value;
+			var nonceValue = "nonce_value";
+			let encryption = new Encryption();
+			var encrypted = encryption.encrypt(password, nonceValue);
 			if(methodCalled=="delete"){
-				post({uid: uidCalled,username:username,password:password} ,"api/DeleteUser.php");
+				post({uid: uidCalled,username:username,password:encrypted} ,"api/DeleteUser.php");
 			}
 			else if(methodCalled=="verify"){
-				post({uid: uidCalled,username:username,password:password} ,"api/VerifyUser.php");
+				post({uid: uidCalled,username:username,password:encrypted} ,"api/VerifyUser.php");
 			}
 			else if(methodCalled=="block"){
-				post({uid: uidCalled,username:username,password:password} ,"api/BlockUser.php");
+				post({uid: uidCalled,username:username,password:encrypted} ,"api/BlockUser.php");
 			}
+			// else if(methodCalled=="edit"){
+			// 	post({uid: uidCalled,username:username,password:encrypted} ,"LoginDataEdit.php");
+			// }
 		}
 		
 		function showPopup() {

@@ -36,7 +36,7 @@ if(isset($_SESSION['district_user'])){
         <link rel="stylesheet" type="text/css" id="theme" href="../css/theme-black.css"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 								
 		<style>
 				/* Styles for the popup */
@@ -144,6 +144,9 @@ if(isset($_SESSION['district_user'])){
 					</li>
 					<li>
 						<a href="../FPS.php"> <span class="xn-text">FPS</span></a>
+					</li>
+					<li>
+						<a href="../Mill.php"> <span class="xn-text">Mill</span></a>
 					</li>
 					<li>
 						<?php if ($newMessage==0){ ?>

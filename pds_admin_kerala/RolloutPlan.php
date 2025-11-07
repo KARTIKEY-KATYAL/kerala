@@ -160,8 +160,8 @@ require('Header.php');
 												<th style="font-size:16px">To_District</th>
 												<th style="font-size:16px">To_Lat</th>
 												<th style="font-size:16px">To_Long</th>
-												<th style="font-size:16px">commodity</th>
-												<th style="font-size:16px">quantity</th>
+												<th style="font-size:16px">Commodity (Qtl)</th>
+												<th style="font-size:16px">Quantity (Km)</th>
 												<th style="font-size:16px">Distance</th>
 												<th style="font-size:16px">Status</th>
                                             </tr>
@@ -284,7 +284,7 @@ require('Header.php');
 			var district = document.getElementById("district").value;
 			const csvResponse = await fetch('api/DownloadOptimalData.php?format=csv&month=' + month + "&district=" + district);
 			const csvBlob = await csvResponse.blob();
-			downloadFile(csvBlob, 'RolloutPlan_' + getDateString() + '.csv');
+			downloadFile(csvBlob, 'RolloutPlan_Leg2_' + getDateString() + '.csv');
 		} catch (error) {
 			console.error('Error downloading CSV file:', error);
 		}
@@ -296,7 +296,7 @@ require('Header.php');
 				var district = document.getElementById("district").value;
 				const csvResponse = await fetch('api/DownloadOptimalData.php?format=pdf&month=' + month + "&district=" + district);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'RolloutPlan_' + getDateString() + '.pdf');
+				downloadFile(csvBlob, 'RolloutPlan_Leg2_' + getDateString() + '.pdf');
 			} catch (error) {
 				console.error('Error downloading PDF file:', error);
 			}
@@ -309,7 +309,7 @@ require('Header.php');
 			var district = document.getElementById("district").value;
 			const excelResponse = await fetch('api/DownloadOptimalData1.php?format=xlsx&month=' + month + "&district=" + district);
 			const excelBlob = await excelResponse.blob();
-			downloadFile(excelBlob, 'RolloutPlan_' + getDateString() + '.xlsx');
+			downloadFile(excelBlob, 'RolloutPlan_Leg2_' + getDateString() + '.xlsx');
 		} catch (error) {
 			console.error('Error downloading XLSX file:', error);
 		}

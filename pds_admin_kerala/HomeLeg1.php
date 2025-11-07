@@ -2,6 +2,7 @@
 require('util/Connection.php');
 require('util/SessionCheck.php');
 require('Header.php');
+require('util/Logger.php');
 ?>
 
 <head>
@@ -392,7 +393,7 @@ require('Header.php');
 <!-- START BREADCRUMB -->
 <ul class="breadcrumb">
 	<li><a href="#">Home</a></li>
-	<li class="active">Tamil Nadu PDS Route Optimization</li>
+	<li class="active">Kerala PDS Route Optimisation</li>
 </ul>
 <!-- END BREADCRUMB -->
 <div>
@@ -409,8 +410,8 @@ require('Header.php');
 			<!-- START SIMPLE DATATABLE -->
 			<div class="panel panel-default">
 				<div class="panel-heading" style="text-align: center;">
-					<h1 style="font-weight: bold; color: #335566;">Kerala PDS Route Optimization</h1>
-					<h1 style="font-weight: bold; color: #FF6666;">Kindly optimizised the Leg1-FCI to Warehouse</h1>
+					<h1 style="font-weight: bold; color: #335566;">Kerala PDS Route Optimisation</h1>
+					<h1 style="font-weight: bold; color: #FF6666;">Kindly optimise the Leg1-FCI to Warehouse</h1>
 
 				</div>
 			</div>
@@ -440,13 +441,13 @@ require('Header.php');
 							<div class="input-group" style="width:100%;">					
 							<select class="form-control" id="year" name="year" style="border-radius:5px;font-weight:bold">
 								<option value='' style="font-weight:bold;color:#000;">Select</option>
-								<option value='2024' style="font-weight:bold;color:#000;">2024</option>
 							</select>
 							</div>
 							<span class="help-block">Selected Year</span>
 						</div>
 					</div>
 				</div>
+				<input type="hidden" id="username" name="username" value="<?php echo $_SESSION["user"]  ?>" />
 				<div class="col-md-3">
 					<div class="form-group">
 						<div class="col-md-2"></div>
@@ -603,7 +604,7 @@ require('Header.php');
 									<h2><b><span style="color: white">Progress Bar</span></b></h2>
 								</center>
 								<center style="margin-top:20px">
-									<h2><b><span style="color: white;">File Upload Successfully</span></b></h2>
+									<h2><b><span style="color: white;">File Uploaded Successfully</span></b></h2>
 								</center>
 								<center><img src="img\Analysis-icon-1.png" style="width:45%" /></center>
 								<center style="margin-top:20px">
@@ -642,11 +643,11 @@ require('Header.php');
 
 			<div id="generateoptinizedplanbutton" style="display:none; overflow: hidden;">
 				<center><div style="font-size: 20px; font-weight: 700; margin-top: 10px; margin-bottom: 20px;color:#000">
-					<i class="fa fa-info-circle" aria-hidden="true"></i> Optimization
+					<i class="fa fa-info-circle" aria-hidden="true"></i> Optimisation
 				</div></center>
 			
 					<button class="upload_button_class" id="upload_button" name="submit">
-						<span style="text-align: center; font-weight: bold;">Generate Optimized Plan</span>
+						<span style="text-align: center; font-weight: bold;">Generate Optimise Plan</span>
 						<a href="#" class="toggle toggle--off"  data-content="Off" onclick="toggleState(this)"></a>
 					</button>
 					<!--<center><img id="level5Image" src="Backend/plantuml_file.png" alt="Plan Image" style="display:none;width:35%;margin-top:40px"></center>-->
@@ -997,6 +998,7 @@ require('Header.php');
 		const signal = controller.signal;
 
 		formData.append('applicable', selectedValues);
+		formData.append('username',document.getElementById("username").value);
 		document.getElementById("processingPopup").style.display = "flex";
 		document.getElementById("cancel-request").style.display = "flex";
 		fetchPromise = fetch(pythonUrl + 'processFileleg1', {
@@ -1250,8 +1252,8 @@ function handleStateCheckboxChange() {
 
 				if (totalCapacity > 0 && totalDemand > 0) {
 					if (totalCapacity >= totalDemand) {
-						// document.getElementById("result").innerHTML = "Optimization can be done.";
-						document.getElementById("result").innerHTML = "<span style='font-weight: bold; font-size: 20px; color: green;'>Optimization can be done.</span>";
+						// document.getElementById("result").innerHTML = "Optimisation can be done.";
+						document.getElementById("result").innerHTML = "<span style='font-weight: bold; font-size: 20px; color: green;'>Optimisation can be done.</span>";
 
 						document.getElementById("districtcheckbox").style.display = "block";
 					}
@@ -1315,7 +1317,7 @@ function handleStateCheckboxChange() {
 					}
 				}
 				else {
-					document.getElementById("result").innerHTML = "Optimization cannot be provided.";
+					document.getElementById("result").innerHTML = "Optimisation cannot be provided.";
 					document.getElementById("result").style.color = "red";
 					document.getElementById("districtcheckbox").style.display = "none";
 					document.getElementById("processingPopup").style.display = "none";
@@ -1343,8 +1345,26 @@ function handleStateCheckboxChange() {
 var currentDate = new Date();
 var currentMonth = currentDate.getMonth();
 var currentYear = currentDate.getFullYear();
+var nextYear = currentYear + 1;
 var monthNames = ['jan', 'feb', 'march', 'april', 'may', 'june', 'july', 'aug', 'sept', 'oct', 'nov', 'dec'];
 var currentMonthValue = monthNames[currentMonth];
+
+var dropdown_year = document.getElementById('year');
+const currentYearOption = document.createElement("option");
+currentYearOption.value = currentYear;
+currentYearOption.textContent = currentYear;
+currentYearOption.style.fontWeight = "bold";
+currentYearOption.style.color = "#000";
+dropdown_year.appendChild(currentYearOption);
+currentYearOption.selected = false; 
+ 
+const nextYearOption = document.createElement("option");
+nextYearOption.value = nextYear;
+nextYearOption.textContent = nextYear;
+nextYearOption.style.fontWeight = "bold";
+nextYearOption.style.color = "#000";
+dropdown_year.appendChild(nextYearOption);
+nextYearOption.selected = true
 
 var dropdown = document.getElementById("month");
 var option = document.createElement('option');

@@ -52,8 +52,8 @@ td {
 												<th style="font-size:16px">Type</th>
 												<th style="font-size:16px">Latitude</th>
 												<th style="font-size:16px">Longitude</th>
-												<th style="font-size:16px">Capacity of Mill</th>
-												<th style="font-size:16px">Processing Capacity of Mill</th>
+												<th style="font-size:16px">Capacity of Mill (Qtl)</th>
+												<th style="font-size:16px">Processing Capacity of Mill (Qtl)</th>
 												<th style="font-size:16px">Status</th>
 												<th style="font-size:16px">Change Status</th>
                                                 <th style="font-size:16px">Edit</th>

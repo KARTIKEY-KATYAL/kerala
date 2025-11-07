@@ -651,3 +651,113 @@ Iteration:  1034    Objective     =      16384066.885967
 
 Dual simplex solved model.
 
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\194f1e0acdc7497eba45d14639dd9693-pulp.lp' Clone_2 (V22.1.1.0) Sun Jan 26 19:58:36 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\5c75bdddc15e49f3bf44eecaf0d9fa4f-pulp.lp' Clone_2 (V22.1.1.0) Sun Jan 26 22:44:41 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\b639e4a924a24f239f81ebd421c09ae2-pulp.lp' Clone_2 (V22.1.1.0) Sun Jan 26 22:51:46 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.01 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\6f1de1407f2541f9b045d8450b227840-pulp.lp' Clone_2 (V22.1.1.0) Sun Jan 26 22:57:38 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\c5a3713baefb4bdea6b13c0bec71cb70-pulp.lp' Clone_2 (V22.1.1.0) Mon Jan 27 09:23:35 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\3a1af3accf64453aa6c5cd969ba6ae44-pulp.lp' Clone_2 (V22.1.1.0) Mon Jan 27 09:49:13 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 2479004 rows and 4901952 columns.
+All rows and columns eliminated.
+Presolve time = 2.64 sec. (2075.14 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\7018c59fc1bf48f2b5eaa9336fdf36ca-pulp.lp' Clone_2 (V22.1.1.0) Mon Jan 27 23:47:33 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\b54a2b7b2ee04d17a7a397a9221398b9-pulp.lp' Clone_2 (V22.1.1.0) Tue Jan 28 00:03:46 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\d4d8df3d5f734359bbb1c1a4cc7451e1-pulp.lp' Clone_2 (V22.1.1.0) Tue Jan 28 00:13:59 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\900fe756ea3d42a2a817c54a8cf00bd3-pulp.lp' Clone_2 (V22.1.1.0) Tue Jan 28 11:09:49 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (1.47 ticks)
+
+Dual simplex solved model.
+
+
+Log for 'C:\Users\Aman\AppData\Local\Temp\4\fba089cb401b4ab1a49093779e8cba09-pulp.lp' Clone_2 (V22.1.1.0) Wed Jan 29 12:31:49 2025
+
+Tried aggregator 1 time.
+LP Presolve eliminated 1956 rows and 3520 columns.
+All rows and columns eliminated.
+Presolve time = 0.02 sec. (1.47 ticks)
+
+Dual simplex solved model.
+

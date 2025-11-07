@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/DCP.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -34,9 +35,11 @@ $status = $_POST["status"];
 
 if($status=='active'){
 	$query = "UPDATE dcp SET active='1' WHERE district='$district'";
+	writeLog("User ->" ." Mill Active -> ". $_SESSION['user'] . "| " . $district);
 }
 else{
 	$query = "UPDATE dcp SET active='0' WHERE district='$district'";
+	writeLog("User ->" ." Mill InActive -> ". $_SESSION['user'] . "| " . $district);
 }
 mysqli_query($con, $query);
 echo "<script>window.location.href = '../DCP.php';</script>";

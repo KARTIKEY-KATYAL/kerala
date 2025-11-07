@@ -3,6 +3,7 @@
 session_start();
 $_SESSION['name'] = null;
 $_SESSION['user'] = null;
+session_destroy();
 header("Location:../AdminLogin.html");
 
 ?>

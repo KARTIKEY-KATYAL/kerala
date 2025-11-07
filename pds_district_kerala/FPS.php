@@ -56,9 +56,9 @@ td {
 												<th style="font-size:16px">Model FPS/Normal FPS</th>
 												<th style="font-size:16px">Latitude</th>
 												<th style="font-size:16px">Longitude</th>
-												<th style="font-size:16px">Demand of Wheat</th>
-												<th style="font-size:16px">Demand of Rice</th>
-												<th style="font-size:16px">Demand of FRice</th>
+												<th style="font-size:16px">Demand of Wheat (Qtl)</th>
+												<th style="font-size:16px">Demand of Rice (Qtl)</th>
+												<th style="font-size:16px">Demand of FRice (Qtl)</th>
 												<th style="font-size:16px">Status</th>
 												<th style="font-size:16px">Change Status</th>
                                                 <th style="font-size:16px">Edit</th>

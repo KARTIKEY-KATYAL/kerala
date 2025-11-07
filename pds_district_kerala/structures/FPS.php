@@ -117,7 +117,9 @@ class FPS {
 	function deletealldistrict(FPS $fps, $district){
         return "DELETE FROM fps WHERE LOWER(district)=Lower('".$district."')";
     }
-	
+	function logname(FPS $fps){
+        return "SELECT name FROM fps WHERE uniqueid='".$fps->getUniqueid()."'";
+    }	
 	function check(FPS $fps){
         return "SELECT * FROM fps WHERE uniqueid='".$fps->getUniqueid()."'";
     }

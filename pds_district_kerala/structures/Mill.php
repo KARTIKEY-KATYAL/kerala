@@ -110,7 +110,9 @@ class DCP {
 	function deletealldistrict(DCP $dcp, $district){
         return "DELETE FROM dcp WHERE LOWER(district)=Lower('".$district."')";
     }
-	
+	function logname(DCP $dcp){
+        return "SELECT name FROM dcp WHERE uniqueid='".$dcp->getUniqueid()."'";
+    }
 	function check(DCP $dcp){
         return "SELECT * FROM dcp WHERE uniqueid='".$dcp->getUniqueid()."'";
     }

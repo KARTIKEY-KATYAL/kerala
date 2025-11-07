@@ -3,6 +3,7 @@
 require('../util/Connection.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 function generateRandomId($length = 10) {
     // Generate random bytes
@@ -43,6 +44,18 @@ $message = $_POST['message'];
 $uniqueid = $_POST['uniqueid'];
 $date = date('Y-m-d H:i:s');
 
+$log_query = "select user_id from user_message WHERE id='$uid'";
+$log_result = mysqli_query($con,$log_query);
+if ($log_result && $row = $log_result->fetch_assoc()) {
+	$user_id =  $row['user_id'];
+}
+
+$log_query = "select username  from login WHERE uid='$user_id'";
+$log_result = mysqli_query($con,$log_query);
+if ($log_result && $row = $log_result->fetch_assoc()) {
+	$log_name =  $row['username'];
+}
+
 if($uniqueid=="all"){
 	$query = "SELECT uid FROM login WHERE role!='admin'";
 	$result = mysqli_query($con,$query);
@@ -59,6 +72,9 @@ else{
 	mysqli_query($con, $query);
 }
 
+$filteredPost = $_POST;
+unset($filteredPost['username'], $filteredPost['password']);
+writeLog("User ->" ." Send  Message ->". $_SESSION['user'] . "| Requested JSON -> " . json_encode($filteredPost). " | " . $log_name);
 
 echo "<script>window.location.href = '../SendMessage.php';</script>";
 

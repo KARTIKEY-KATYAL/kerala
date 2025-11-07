@@ -3,6 +3,7 @@
 require('../util/Connection.php');
 require('../structures/Warehouse.php');
 require('../util/SessionFunction.php');
+require('../util/Logger.php');
 
 require('../structures/Login.php');
 
@@ -34,15 +35,29 @@ if($numrows == 0){
 $Warehouse = new Warehouse;
 $Warehouse->setUniqueid($_POST['uid']);
 
+
+
 $query = $Warehouse->delete($Warehouse);
 
 if($_POST['uid']=="all"){
 	$query = $Warehouse->deleteall($Warehouse);
 }
 
+$log_query = $Warehouse->logname($Warehouse);
+$log_name= "all";
+$log_result = mysqli_query($con,$log_query);
+if ($log_result && $row = $log_result->fetch_assoc()) {
+	$log_name =  $row['name'];
+}
+
 mysqli_query($con,$query);
 mysqli_close($con);
-echo "<script>window.location.href = '../Warehouse.php';</script>";
+
+$filteredPost = $_POST;
+unset($filteredPost['username'], $filteredPost['password']);
+writeLog("User ->" ." Warehouse deleted -> ". $_SESSION['user'] . "| Requested JSON -> " . json_encode($filteredPost) . " | " . $log_name);
+
+//echo "<script>window.location.href = '../Warehouse.php';</script>";
 
 
 ?>

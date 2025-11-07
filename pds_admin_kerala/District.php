@@ -14,7 +14,10 @@ require('Header.php');
     color: black;
     /* Optional: Font size for table header */
 }
-    </style>
+</style>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
+
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
@@ -98,7 +101,7 @@ require('Header.php');
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-info"></span></span>
-                                                        <input type="password" class="form-control" id="password" name="password" required />
+                                                        <input type="password" class="form-control" id="password" name="password" required autocomplete="off"/>
                                                     </div>
                                                     <span class="help-block">Password</span>
                                                 </div>
@@ -193,7 +196,10 @@ require('Header.php');
 			var username = document.getElementById('username').value;
 			var password = document.getElementById('password').value;
 			var temp_id = document.getElementById('deleteid').value;
-			post({uid: temp_id,username:username,password:password} ,"api/DistrictDelete.php");
+            var nonceValue = "nonce_value";
+            let encryption = new Encryption();
+            var encrypted = encryption.encrypt(password, nonceValue);
+			post({uid: temp_id,username:username,password:encrypted} ,"api/DistrictDelete.php");
 		}
 		
 		function hidePopup() {

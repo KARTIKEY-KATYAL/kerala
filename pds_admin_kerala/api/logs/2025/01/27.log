@@ -1,0 +1,4 @@
+[2025-01-27 09:22:45] User -> Cost for leg2 Added ->admin@pds| Requested JSON -> {"cost_R7ym6nTNse84du":"200"} | 
+[2025-01-27 09:22:55] User -> Cost for leg1 Added ->admin@pds| Requested JSON -> {"cost_KbvGPd46cPu8xu":"","cost_smQRUy6C2AastJ":"10"} | 
+[2025-01-27 23:54:29] User -> Save Data | approve admin change yes ->admin@pds| 505801 - 1419002 - Wheat
+[2025-01-27 23:55:49] User -> Cost for leg1 Added ->admin@pds| Requested JSON -> {"cost_KbvGPd46cPu8xu":"","cost_smQRUy6C2AastJ":"100"} | 

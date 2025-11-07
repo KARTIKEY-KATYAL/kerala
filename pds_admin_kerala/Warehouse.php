@@ -53,7 +53,7 @@ require('Header.php');
 												<th style="font-size:15px">Warehouse Type</th>
 												<th style="font-size:15px">Latitude</th>
 												<th style="font-size:15px">Longitude</th>
-												<th style="font-size:15px">Storage</th>
+												<th style="font-size:15px">Storage (Qtl)</th>
 												<th style="font-size:16px">Status</th>
 												<th style="font-size:16px">Change Status</th>
                                                 <th style="font-size:15px">Edit</th>

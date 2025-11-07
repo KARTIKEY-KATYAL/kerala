@@ -4,6 +4,7 @@ require('../util/Connection.php');
 require('../structures/Warehouse.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Logger.php');
 
 if(!SessionCheck()){
 	return;
@@ -36,17 +37,21 @@ $fpstype = $_POST["fpstype"];
 if($fpstype=='Model FPS'){
 	if($status=='active'){
 		$query = "UPDATE fps SET active='1' WHERE district='$district' AND type='Model FPS'";
+		writeLog("User ->" ." Model FPS Active -> ". $_SESSION['user'] . "| " . $district);
 	}
 	else{
 		$query = "UPDATE fps SET active='0' WHERE district='$district' AND type='Model FPS'";
+		writeLog("User ->" ." Model FPS InActive -> ". $_SESSION['user'] . "| " . $district);
 	}
 }
 else{
 	if($status=='active'){
 		$query = "UPDATE fps SET active='1' WHERE district='$district' AND type='Normal FPS'";
+		writeLog("User ->" ." Normal FPS Active -> ". $_SESSION['user'] . "| " . $district);
 	}
 	else{
 		$query = "UPDATE fps SET active='0' WHERE district='$district' AND type='Normal FPS'";
+		writeLog("User ->" ." Normal FPS InActive -> ". $_SESSION['user'] . "| " . $district);
 	}
 }
 mysqli_query($con, $query);

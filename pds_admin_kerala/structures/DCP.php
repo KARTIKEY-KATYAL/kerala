@@ -108,6 +108,10 @@ class DCP {
         return "DELETE FROM dcp WHERE 1";
     }
 	
+	function logname(DCP $dcp){
+        return "SELECT name FROM dcp WHERE uniqueid='".$dcp->getUniqueid()."'";
+    }
+	
 	function check(DCP $dcp){
         return "SELECT * FROM dcp WHERE uniqueid='".$dcp->getUniqueid()."'";
     }

@@ -13,7 +13,9 @@ require('Header.php');
     color: black;
     /* Optional: Font size for table header */
 }
-    </style>
+</style>
+<script src="crypto-js/crypto-js.js"></script>
+<script src="js/Encryption.js"></script>
 
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
@@ -77,8 +79,8 @@ require('Header.php');
 												<th style="font-size:16px">Type</th>
 												<th style="font-size:16px">Latitude</th>
 												<th style="font-size:16px">Longitude</th>
-												<th style="font-size:16px">Capacity of Mill</th>
-												<th style="font-size:16px">Processing Capacity of Mill</th>
+												<th style="font-size:16px">Capacity of Mill (Qtl)</th>
+												<th style="font-size:16px">Processing Capacity of Mill (Qtl)</th>
 												<th style="font-size:16px">Status</th>
 												<th style="font-size:16px">Change Status</th>
                                                 <th style="font-size:16px">Edit</th>
@@ -220,7 +222,10 @@ require('Header.php');
 			var username = document.getElementById('username').value;
 			var password = document.getElementById('password').value;
 			var temp_id = document.getElementById('deleteid').value;
-			post({uid: temp_id,username:username,password:password} ,"api/DCPDelete.php");
+			var nonceValue = "nonce_value";
+			let encryption = new Encryption();
+			var encrypted = encryption.encrypt(password, nonceValue);
+			post({uid: temp_id,username:username,password:encrypted} ,"api/DCPDelete.php");
 		}
 		
 		function hidePopup() {

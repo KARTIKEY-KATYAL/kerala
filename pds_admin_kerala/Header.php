@@ -12,8 +12,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <link rel="stylesheet" type="text/css" id="theme" href="css/theme-black.css"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script> var pythonUrl = "http://localhost:5000/"; var directory = "" </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script> var pythonUrl = "https://annachakra.kerala.gov.in/api/"; var directory = "" </script>
 								
 		<style>
 		.popup {
@@ -91,7 +91,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 					<a href="OptimisedData.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.2 OptimisedPlan Leg2</span></a>
 				</li>
 				<li <?php echo ($current_page === 'RolloutPlan.php') ? 'class="active"' : ''; ?>>
-					<a href="RolloutPlan.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.3 RolloutPlan Leg2</span></a>
+					<a href="RolloutPlan.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.3 Rollout Plan Leg2</span></a>
 				</li>
 				<li>
 					<a style="background-color:#FFC167"><center><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2</span></center></a>
@@ -103,7 +103,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 					<a href="OptimisedDataLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.2 OptimisedPlan Leg1</span></a>
 				</li>
 				<li <?php echo ($current_page === 'RolloutPlanLeg1.php') ? 'class="active"' : ''; ?>>
-					<a href="RolloutPlanLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.3 RolloutPlan Leg1</span></a>
+					<a href="RolloutPlanLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.3 Rollout Plan Leg1</span></a>
 				</li>
 				<li>
 					<a style="background-color:#FFC167"><center><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Final Rollout Plan</span></center></a>

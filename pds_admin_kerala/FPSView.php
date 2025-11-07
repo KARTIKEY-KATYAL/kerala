@@ -70,9 +70,9 @@ $tablename = "fps_".$id;
 												<th style="font-size:16px">Model FPS/Normal FPS</th>
 												<th style="font-size:16px">Latitude</th>
 												<th style="font-size:16px">Longitude</th>
-												<th style="font-size:16px">Demand of Wheat</th>
-												<th style="font-size:16px">Demand of Rice</th>
-												<th style="font-size:16px">Demand of Frice</th>
+												<th style="font-size:16px">Demand of Wheat (Qtl)</th>
+												<th style="font-size:16px">Demand of Rice (Qtl)</th>
+												<th style="font-size:16px">Demand of Frice (Qtl)</th>
                                             </tr>
                                         </thead>
 										 <tbody id="fps_table">
@@ -135,7 +135,7 @@ $tablename = "fps_".$id;
 				var tableName = '<?php echo $tablename ?>';
 				const csvResponse = await fetch('api/DownloadOptimalDataFPS.php?format=csv&tableName='+tableName);
 				const csvBlob = await csvResponse.blob();
-				downloadFile(csvBlob, 'Gujarat_' + getDateString() + '.csv');
+				downloadFile(csvBlob, 'KeralaFPS_' + getDateString() + '.csv');
 			} catch (error) {
 				console.error('Error downloading CSV file:', error);
 			}
@@ -147,7 +147,7 @@ $tablename = "fps_".$id;
 				var tableName = '<?php echo $tablename ?>';
 				const excelResponse = await fetch('api/DownloadOptimalDataFPS.php?format=xlsx&tableName='+tableName);
 				const excelBlob = await excelResponse.blob();
-				downloadFile(excelBlob, 'Gujarat_' + getDateString() + '.xlsx');
+				downloadFile(excelBlob, 'KeralaFPS_' + getDateString() + '.xlsx');
 			} catch (error) {
 				console.error('Error downloading XLSX file:', error);
 			}

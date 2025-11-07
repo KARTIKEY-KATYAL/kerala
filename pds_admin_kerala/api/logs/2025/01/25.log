@@ -1,0 +1,19 @@
+[2025-01-25 10:47:58] User -> Mill InActive -> admin@pds| Empees Modern Rice Mill
+[2025-01-25 10:48:10] User -> Mill Active -> admin@pds| Empees Modern Rice Mill
+[2025-01-25 10:48:27] User -> Warehouse InActive -> admin@pds| Abc
+[2025-01-25 10:48:43] User -> Warehouse Active -> admin@pds| Abc
+[2025-01-25 10:49:04] User -> FPS InActive -> admin@pds| Test Data
+[2025-01-25 10:49:06] User -> FPS Active -> admin@pds| Test Data
+[2025-01-25 17:51:54] User -> Warehouse InActive -> admin@pds| Alappuzha
+[2025-01-25 17:52:22] User -> Warehouse Active -> admin@pds| Alappuzha
+[2025-01-25 17:55:52] User -> FPS Edit->admin@pds| Requested JSON -> {"name":"Test Data","uniqueid":"FPS_67921235cea","active":"1","type":"Normal FPS","latitude":"32.33","longitude":"78.888","district":"Alappuzha","id":"1","demand":"100","demand_rice":"110","demand_frice":"120"}
+[2025-01-25 18:01:23] User -> Model FPS InActive -> admin@pds| Alappuzha
+[2025-01-25 18:02:01] User -> Model FPS Active -> admin@pds| Alappuzha
+[2025-01-25 18:02:18] User -> Normal FPS InActive -> admin@pds| Alappuzha
+[2025-01-25 18:02:38] User -> FPS Active -> admin@pds| Test Data
+[2025-01-25 18:09:19] User -> Cost for leg2 Added ->admin@pds| Requested JSON -> {"cost_skLmacf4EtH4dH":"1000"} | 
+[2025-01-25 18:11:49] User -> Cost for leg1 Added ->admin@pds| Requested JSON -> {"cost_KbvGPd46cPu8xu":"","cost_3iaVu5QPFLChjb":"500"} | 
+[2025-01-25 18:20:42] User -> Normal FPS InActive -> admin@pds| 
+[2025-01-25 18:20:55] User -> Normal FPS Active -> admin@pds| 
+[2025-01-25 18:21:05] User -> Model FPS InActive -> admin@pds| 
+[2025-01-25 18:21:18] User -> Model FPS Active -> admin@pds| 

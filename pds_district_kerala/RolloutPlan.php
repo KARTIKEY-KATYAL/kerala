@@ -190,9 +190,9 @@ $totalidsapproved = mysqli_num_rows($result);
 												<th style="font-size:16px">To_District</th>
 												<th style="font-size:16px">To_Lat</th>
 												<th style="font-size:16px">To_Long</th>
-												<th style="font-size:16px">commodity</th>
-												<th style="font-size:16px">quantity</th>
-												<th style="font-size:16px">Distance</th>
+												<th style="font-size:16px">Commodity</th>
+												<th style="font-size:16px">Quantity (Qtl)</th>
+												<th style="font-size:16px">Distance (Km)</th>
 												<th style="font-size:16px">Status</th>
                                             </tr>
                                         </thead>

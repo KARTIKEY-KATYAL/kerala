@@ -4,6 +4,9 @@ require('../util/Connection.php');
 require('../structures/DCP.php');
 require('../util/SessionFunction.php');
 require('../structures/Login.php');
+require('../util/Security.php');
+require ('../util/Encryption.php');
+$nonceValue = 'nonce_value';
 
 if(!SessionCheck()){
 	return;
@@ -43,19 +46,11 @@ function isStringNumber($stringValue) {
 
 $person = new Login;
 $person->setUsername($_POST["username"]);
-$person->setPassword($_POST["password"]);
+$Encryption = new Encryption();
+$person->setPassword($Encryption->decrypt($_POST["password"], $nonceValue));
 
 if($_SESSION['district_user']!=$person->getUsername()){
 	echo "User is logged in with different username and password";
-	return;
-}
-
-$query = "SELECT * FROM login WHERE username='".$person->getUsername()."' AND password='".$person->getPassword()."'";
-$result = mysqli_query($con,$query);
-$numrows = mysqli_num_rows($result);
-
-if($numrows == 0){
-	echo "Error : Password or Username is incorrect";
 	return;
 }
 
@@ -74,36 +69,49 @@ if(!isStringNumber($_POST["demand_rice"])){
 	exit();
 }
 
-$district = formatName($_POST["district"]);
-$latitude = $_POST["latitude"];
-$longitude = $_POST["longitude"];
-$name = formatName($_POST["name"]);
-$id = $_POST["id"];
-$type = $_POST["type"];
-$demand = $_POST["demand"];
-$demand_rice = $_POST["demand_rice"];
-$uniqueid = $_POST["uniqueid"];
-$active = $_POST["active"];
 
-$DCP = new DCP;
-$DCP->setUniqueid($uniqueid);
-$DCP->setDistrict($district);
-$DCP->setLatitude($latitude);
-$DCP->setLongitude($longitude);
-$DCP->setName($name);
-$DCP->setId($id);
-$DCP->setType($type);
-$DCP->setDemand($demand);
-$DCP->setDemandRice($demand_rice);
-$DCP->setActive($active);
+$query = "SELECT * FROM login WHERE username='".$person->getUsername()."'";
+$result = mysqli_query($con,$query);
+$row = mysqli_fetch_assoc($result);
 
-$query = $DCP->update($DCP);
+$dbHashedPassword = $row['password'];
+if(password_verify($person->getPassword(), $dbHashedPassword)){
 
-mysqli_query($con, $query);
+    $district = formatName($_POST["district"]);
+    $latitude = $_POST["latitude"];
+    $longitude = $_POST["longitude"];
+    $name = formatName($_POST["name"]);
+    $id = $_POST["id"];
+    $type = $_POST["type"];
+    $demand = $_POST["demand"];
+    $demand_rice = $_POST["demand_rice"];
+    $uniqueid = $_POST["uniqueid"];
+    $active = $_POST["active"];
+    
+    $DCP = new DCP;
+    $DCP->setUniqueid($uniqueid);
+    $DCP->setDistrict($district);
+    $DCP->setLatitude($latitude);
+    $DCP->setLongitude($longitude);
+    $DCP->setName($name);
+    $DCP->setId($id);
+    $DCP->setType($type);
+    $DCP->setDemand($demand);
+    $DCP->setDemandRice($demand_rice);
+    $DCP->setActive($active);
+    
+    $query = $DCP->update($DCP);
+    
+    mysqli_query($con, $query);
+    
+    mysqli_close($con);
+    
+    echo "<script>window.location.href = '../DCP.php';</script>";
+} 
+else{
+    echo "Error : Password or Username is incorrect";
+}
 
-mysqli_close($con);
-
-echo "<script>window.location.href = '../DCP.php';</script>";
 
 ?>
 <?php require('Fullui.php');  ?>

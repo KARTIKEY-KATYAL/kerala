@@ -11,11 +11,18 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 if (isset($_GET['format'])) {
     $format = $_GET['format'];
     
-    $columns = ["district","name","id","type","latitude","longitude","demand","demand_rice","uniqueid"];
+    $columns = ["district","name","id","type","latitude","longitude","demand","demand_rice","demand_frice"];
+	$columns1 = ["district","name","id","type","latitude","longitude","demand_wheat","demand_rice","demand_frice"];
     $tablename = $_GET['tableName'];
-	$tablename1 = $_GET['tableName1'];
+	if(isset($_GET['tableName1']))
+	{
+		$tablename1 = $_GET['tableName1'];
+	}
+	else{
+		$tablename1="";
+	}
 	$tableData = array();
-    array_push($tableData,$columns);
+    array_push($tableData,$columns1);
 
 	$query = "SELECT * FROM ".$tablename." WHERE 1";
     $result = mysqli_query($con,$query);
@@ -41,8 +48,13 @@ if (isset($_GET['format'])) {
         }
     }
 	
-	if($tablename!=$tablename1){
-		$query = "SELECT * FROM ".$tablename." WHERE 1";
+	if($tablename!=$tablename1 and $tablename1!="")
+	{
+		$query = "SELECT * FROM " . $tablename1 . " t 
+					WHERE NOT EXISTS (
+					  SELECT 1 FROM " . $tablename . " t1 
+					  WHERE t.name = t1.name AND t.id = t1.id
+					)";
 		$result = mysqli_query($con,$query);
 		$numrows = mysqli_num_rows($result);
 		
@@ -83,15 +95,10 @@ if (isset($_GET['format'])) {
             $spreadsheet = new Spreadsheet();
             $sheet = $spreadsheet->getActiveSheet();
 
-            // Set column names as the first row
-            $columnIndex = 1;
-            foreach ($columns as $columnName) {
-                $sheet->setCellValueByColumnAndRow($columnIndex, 1, $columnName);
-                $columnIndex++;
-            }
+            
 
             // Insert data tableData
-            $rowIndex = 2;
+            $rowIndex = 1;
             foreach ($tableData as $rowData) {
                 $columnIndex = 1;
                 foreach ($rowData as $value) {

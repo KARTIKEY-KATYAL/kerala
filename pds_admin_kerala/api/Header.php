@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" id="theme" href="../css/theme-black.css"/>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 								
 		<style>
 		.popup {
@@ -83,7 +83,7 @@
             <!-- START X-NAVIGATION -->
 			<ul class="x-navigation">
 				<li class="xn-logo">
-					<span style="font-size: 19px; text-align: center; margin: 10px;color:#fff">Telangana State Level</span>
+					<span style="font-size: 19px; text-align: center; margin: 10px;color:#fff">Kerala State Level</span>
 					<a href="#" class="x-navigation-control"></a>
 				</li>
 				<li class="xn-profile">
@@ -109,7 +109,7 @@
 					<a href="../OptimisedData.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.2 OptimisedPlan Leg2</span></a>
 				</li>
 				<li>
-					<a href="../RolloutPlan.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.3 RolloutPlan Leg2</span></a>
+					<a href="../RolloutPlan.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 1.3 Rollout Plan Leg2</span></a>
 				</li>
 				<li>
 					<a style="background-color:#FFC167"><center><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2</span></center></a>
@@ -121,7 +121,7 @@
 					<a href="../OptimisedDataLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.2 OptimisedPlan Leg1</span></a>
 				</li>
 				<li>
-					<a href="../RolloutPlanLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.3 RolloutPlan Leg1</span></a>
+					<a href="../RolloutPlanLeg1.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Step 2.3 Rollout Plan Leg1</span></a>
 				</li>
 				<li>
 					<a style="background-color:#FFC167"><center><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Final Rollout Plan</span></center></a>
@@ -142,7 +142,7 @@
 					<a href="Logout.php" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Logout</span></a>
 				</li>
 				<li>
-					<a href="" style="padding-left:0px"><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Edit PDS Details</span></a>
+					<a style="background-color:#FFC167"><center><span class="xn-text" style="font-family:sans-serif;font-weight:italic;font-size:16px;">Edit PDS Details</span></center></a>
 				</li>
 				
 				<li>

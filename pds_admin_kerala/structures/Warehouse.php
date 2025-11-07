@@ -109,6 +109,10 @@ class Warehouse {
         return "DELETE FROM warehouse WHERE 1";
     }
 	
+	function logname(Warehouse $warehouse){
+        return "SELECT name FROM warehouse WHERE uniqueid='".$warehouse->getUniqueid()."'";
+    }
+	
 	function check(Warehouse $warehouse){
         return "SELECT * FROM warehouse WHERE uniqueid='".$warehouse->getUniqueid()."'";
     }

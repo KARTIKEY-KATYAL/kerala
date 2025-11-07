@@ -45,13 +45,15 @@ require('Header.php');
                                     <table id="export_table" class="table">
                                         <thead>
                                             <tr>
-												<th style="font-size:16px">Year</th>
-												<th style="font-size:16px">Month</th>
-												<th style="font-size:16px">Applicable Month</th>
-												<th style="font-size:16px">Allocation</th>
-												<th style="font-size:16px">QKM</th>
-												<th style="font-size:16px">Average Distance</th>
-												<th style="font-size:16px">Cost</th>
+												<th style="font-size:16px; text-align: center;">Year</th>
+												<th style="font-size:16px; text-align: center;">Month</th>
+												<th style="font-size:16px; text-align: center;">Applicable Month</th>
+												<th style="font-size:16px; text-align: center;">Allocation</th>
+												<th style="font-size:16px; text-align: center;">QKM</th>
+												<th style="font-size:16px; text-align: center;">Average Distance</th>
+												<th style="font-size:16px; text-align: center;">Cost</th>
+												<th style="font-size:16px; text-align: center;">Reset</th>
+
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -69,9 +71,6 @@ require('Header.php');
 											$qkm = 0;
 											$qkm_optimised = 0;
 											$averagedistance = 0;
-											
-											
-											
 											
 											$tablename = "optimiseddata_".$id;
 
@@ -92,13 +91,26 @@ require('Header.php');
 											}
 											$averagedistanceoptimised = round($qkm_optimised/$allocation,2);
 											$qkm = round($qkm,2);
+
+											$reset = "<input class='btn btn-info btn-block' style='width:30%' onclick='resetFunction(\"".$id."\")' value='Reset'></input>";
 											
 											if($cost==null or $cost==""){
 												$temp = "cost_".$id;
 												$cost = "<input type='text' id='".$temp."' name='".$temp."' />";
+												$reset = "";
 											}											
 											
-											echo "<tr><td>".$year."</td><td>".$month."</td><td>".$applicable."</td><td>".$allocation."</td><td>".$qkm."</td><td>".$averagedistanceoptimised."</td><td>".$cost."</td></tr>";
+											echo "<tr style='text-align: center;'>
+											<td>".ucfirst(strtolower($year))."</td>
+											<td>".ucfirst(strtolower($month))."</td>
+											<td>".ucfirst(strtolower($applicable))."</td>
+											<td>".$allocation."</td>
+											<td>".$qkm."</td>
+											<td>".$averagedistanceoptimised."</td>
+											<td>".$cost."</td>
+											<td>".$reset."</td>
+										  </tr>";
+
 									
 											}
 										?>
@@ -172,11 +184,28 @@ require('Header.php');
 			form.submit();
 		}
 
-		document.getElementById('popup').style.display = 'none';
+		//document.getElementById('popup').style.display = 'none';
 	
 		function hidePopup() {
             document.getElementById('popup').style.display = 'none';
         }
+
+		function resetFunction($id){
+			var dataString = { id: $id }; 
+			$.ajax({
+				type: "POST",
+				url: "api/resetPerforma.php",
+				data: dataString,
+				cache: false,
+				error: function(){
+					alert("timeout");
+				},
+				success: function(result){
+					location.reload();
+				}
+			});
+			
+		}
 		
 		var dataString = "";
 		$.ajax({
