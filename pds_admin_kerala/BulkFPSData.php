@@ -7,7 +7,7 @@ require('Header.php');
                 <!-- START BREADCRUMB -->
                 <ul class="breadcrumb">
                     <li><a href="FPS.php">Home</a></li>
-                    <li class="active">FPS Bulk Ad</li>
+                    <li class="active">FPS Bulk Add</li>
                 </ul>
                 <!-- END BREADCRUMB -->
 
