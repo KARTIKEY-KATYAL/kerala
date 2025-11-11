@@ -17,9 +17,17 @@ if (empty($_POST['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_toke
   die("Something went wrong. Request denied.");
 }
 
-if (empty($_POST['captchainput']) ||$_SESSION['captcha'] !=  $_POST['captchainput']){
-  die("Please Check Captcha");
+// Server-side CAPTCHA verification
+if (
+    !isset($_POST['captchainput']) || 
+    !isset($_SESSION['captcha']) || 
+    strtolower(trim($_SESSION['captcha'])) !== strtolower(trim($_POST['captchainput']))
+) {
+    die("Please Check Captcha");
 }
+
+// Clear CAPTCHA from session after verification (one-time use)
+unset($_SESSION['captcha']);
 
 $person = new Login;
 $person->setUsername($_POST["username"]);

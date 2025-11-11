@@ -18,24 +18,24 @@
 		function generateCaptcha() {
 			document.getElementById("captchainput").value = "";
 			captcha = document.getElementById("image");
-			var uniquechar = "";
-			const randomchar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-			for (let i = 1; i < 5; i++) {
-				uniquechar += randomchar.charAt(Math.random() * randomchar.length)
-			}
-			captcha.innerHTML = uniquechar;
+			
+			// Get CAPTCHA from server
+			fetch("captcha.php", {
+				method: "POST"
+			})
+			.then(response => response.text())
+			.then(data => {
+				captcha.innerHTML = data;
+			});
 		}
 		 
 		function verifyCaptcha() {
 			const usr_input = document.getElementById("captchainput").value;
-			if (usr_input == captcha.innerHTML) {
-				return true;
-			}
-			else {
-				alert("Incorrect Captcha");
-				generateCaptcha();
+			if (usr_input.trim() === "") {
+				alert("Please enter CAPTCHA");
 				return false;
 			}
+			return true;
 		}
 		</script>
 		<style>

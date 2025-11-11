@@ -19,6 +19,7 @@ if (
     die("Something went wrong. Request denied.");
 }
 
+// Server-side CAPTCHA verification
 if (
     !isset($_POST['captchainput']) || 
     !isset($_SESSION['captcha']) || 
@@ -26,6 +27,9 @@ if (
 ) {
     die("Please Check Captcha");
 }
+
+// Clear CAPTCHA from session after verification (one-time use)
+unset($_SESSION['captcha']);
 
 $person = new Login;
 $person->setUsername($_POST["username"]);
