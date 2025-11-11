@@ -25,40 +25,32 @@
 			document.getElementById("password").value = "";
 			document.getElementById("username").value = "";
 			captcha = document.getElementById("image");
-			var uniquechar = "";
-			const randomchar =
-			  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-			for (let i = 0; i < 5; i++) {
-			  uniquechar += randomchar.charAt(Math.random() * randomchar.length);
-			}
-			captcha.innerHTML = uniquechar;
 	
-			// Store CAPTCHA in session
+			// Get CAPTCHA from server
 			$.ajax({
-			  url: "captcha.php",
-			  method: "POST",
-			  data: { captcha: uniquechar },
+			  url: "captcha.php?" + new Date().getTime(),
+			  method: "GET",
 			  success: function (response) {
-				console.log("CAPTCHA stored in session: " + response);
+				captcha.innerHTML = response.trim();
 			  },
 			});
 		  }
 	
-		  // Verify CAPTCHA
+		  // Verify CAPTCHA (now server-side validation only)
 		  function verifyCaptcha() {
 			const usr_input = document.getElementById("captchainput").value;
-			if (usr_input === captcha.innerHTML) {
-			  var readableString = document.getElementById("password").value;
-			  var nonceValue = "nonce_value";
-			  let encryption = new Encryption();
-			  var encrypted = encryption.encrypt(readableString, nonceValue);
-			  document.getElementById("password").value = encrypted;
-			  return true;
-			} else {
-			  alert("Incorrect Captcha");
-			  generateCaptcha();
+			if (usr_input.trim() === "") {
+			  alert("Please enter CAPTCHA");
 			  return false;
 			}
+			
+			// Encrypt password before submission
+			var readableString = document.getElementById("password").value;
+			var nonceValue = "nonce_value";
+			let encryption = new Encryption();
+			var encrypted = encryption.encrypt(readableString, nonceValue);
+			document.getElementById("password").value = encrypted;
+			return true;
 		  }
 	
 		  // Fetch CSRF Token
