@@ -1,8 +1,11 @@
 <?php
 require("../util/Connection.php");
+require("../util/SessionFunction.php");
 
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
+// Check session validity with timeout controls
+if(!SessionCheck()){
+	echo "Session timeout";
+	exit();
 }
 
 $currentFile = basename($_SERVER["PHP_SELF"]);

@@ -1,7 +1,12 @@
 <?php
 require('../util/Connection.php');
-session_start();
+require('../util/SessionFunction.php');
 
+// Check session validity
+if(!SessionCheck()){
+	echo "Session timeout";
+	exit();
+}
 
 $mapData = [
     "District" => "district",

@@ -2,7 +2,7 @@
 require('../util/Connection.php');
 
 function isOnlyCharacters($input) {
-    if (!preg_match('/^[a-zA-Z]+$/', $input)) {
+    if (!preg_match('/^[a-zA-Z\s]+$/', $input) || empty(trim($input))) {
         die("");
     }
     return true;
